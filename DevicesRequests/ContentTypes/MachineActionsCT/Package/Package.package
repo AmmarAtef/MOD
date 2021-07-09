@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="23711a42-da58-4266-ab20-9bbfe58ab37b" solutionId="23711a42-da58-4266-ab20-9bbfe58ab37b" resetWebServer="false" sharePointProductVersion="19.0" name="MachineActionsCT" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="9dd0fd3a-fcc3-4824-b673-48f0549fbd42" />
+  </features>
+</package>

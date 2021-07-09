@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01005425A0B2F96840688007DE4ADC94627C" Name="SupervisorVisitingRequestStatusCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{28DFCFC3-C4B5-46AC-8278-DAA8467F210E}" DisplayName="$Resources:Depratment" Required="TRUE" Description="$Resources:Depratment" Name="Depratment" />
+      <FieldRef ID="{62F8EACA-E836-4863-9AFC-9D81619322FE}" DisplayName="$Resources:SupervisorVisitingRequestID" Required="TRUE" Hidden="FALSE" Name="SupervisorVisitingRequestID" ReadOnly="FALSE" />
+      <FieldRef ID="{E2C2B1C8-8D3C-4A14-9305-2A43FC5453CB}" DisplayName="$Resources:Status" Required="TRUE" Description="$Resources:Status" Name="Status" />
+      <FieldRef ID="{481444FE-1D63-4652-96BD-2EE8ECAF881F}" DisplayName="$Resources:ApprovalNote" Required="TRUE" Description="$Resources:ApprovalNote" Name="ApprovalNote" NumLines="10" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

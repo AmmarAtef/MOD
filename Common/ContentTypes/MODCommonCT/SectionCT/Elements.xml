@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01006D5A33D23E8D47EB8099D011533A243D" Name="SectionCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{AE8EF7AA-72EE-4D93-BC81-C8CC790FB5D2}" DisplayName="$Resources:SectionCode" Required="TRUE" Description="$Resources:SectionCode" Name="SectionCode" />
+      <FieldRef ID="{F6E58127-ACE9-4C3A-BC3D-A36B62CC8DAA}" DisplayName="$Resources:SectionName" Required="TRUE" Description="$Resources:SectionName" Name="SectionName" />
+      <FieldRef ID="{E030DDEB-370D-47B6-BEB8-B4894BE11B9A}" DisplayName="$Resources:DepartmentName" Required="TRUE" Hidden="FALSE" Name="DepCode" ReadOnly="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

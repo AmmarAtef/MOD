@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+
+  <Field
+    ID="{2C4C9D33-BC00-4CE3-8CD8-094EAC9540F6}"
+    Name="RequestType"
+    DisplayName="$Resources:RequestType"
+    Description="$Resources:RequestType"
+    Type="Number"
+    Decimals="0"
+    ReadOnly="TRUE"
+    Required="TRUE"
+    Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+       ID="{867DC078-81E9-4BC7-A9BD-DDAD35248712}"
+       Name="RequestMessage"
+       DisplayName="$Resources:RequestMessage"
+       Description="$Resources:RequestMessage"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+       ID="{4C7AEC94-88C6-44B6-BE9C-CD34C482510E}"
+       Name="DevicesRequestDate"
+       DisplayName="$Resources:DevicesRequestDate"
+       Description="$Resources:DevicesRequestDate"
+       Type="DateTime"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+
+  <Field
+  ID="{FF6268A8-66C3-410F-B64B-D0B8FCF8F6E5}"
+  Name="ActionTime"
+  DisplayName="$Resources:ActionTime"
+  Description="$Resources:ActionTime"
+  Type="Text"
+  Required="TRUE"
+  Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+       ID="{A1206481-9FA9-4A3B-AB9A-1CC5FC643F94}"
+       Name="SupervisorName"
+       DisplayName="$Resources:SupervisorName"
+       Description="$Resources:SupervisorName"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+       ID="{4D4C7683-BB85-44FE-96BD-5F561B1B4E44}"
+       Name="IdentityNumber"
+       DisplayName="$Resources:IdentityNumber"
+       Description="$Resources:IdentityNumber"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+       ID="{07B7411D-6487-4AAD-9B17-031AB8170F46}"
+       Name="WorkingPlace"
+       DisplayName="$Resources:WorkingPlace"
+       Description="$Resources:WorkingPlace"
+       Type="Text"
+       Required="FALSE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+         ID="{8E1400A2-25DC-4218-80A7-8269690228B5}"
+         Name="ApplicantName"
+         DisplayName="$Resources:ApplicantName"
+         Description="$Resources:ApplicantName"
+         Type="Text"
+         Required="TRUE"
+         Group="MOD SiteColumns">
+  </Field>
+  <Field
+         ID="{B5D9CD2D-27B1-473F-B30B-102094B40A41}"
+         Name="ApplicantRank"
+         DisplayName="$Resources:ApplicantRank"
+         Description="$Resources:ApplicantRank"
+         Type="Text"
+         Required="TRUE"
+         Group="MOD SiteColumns">
+  </Field>
+  <Field
+         ID="{1998141E-58ED-4EC8-AA2E-C110739F9358}"
+         Name="ApplicantSection"
+         DisplayName="$Resources:ApplicantSection"
+         Description="$Resources:ApplicantSection"
+         Type="Text"
+         Required="TRUE"
+         Group="MOD SiteColumns">
+  </Field>
+  <Field
+         ID="{751678A9-9153-498C-A037-202C6DA7A4E7}"
+         Name="ApplicantAdministration"
+         DisplayName="$Resources:ApplicantAdministration"
+         Description="$Resources:ApplicantAdministration"
+         Type="Text"
+         Required="TRUE"
+         Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+ID="{C22466F5-3DB3-47EA-8E9E-B4234C615CB0}"
+Name="SecurityMSG"
+DisplayName="$Resources:SecurityMSG"
+Description="$Resources:SecurityMSG"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+
+  <Field
+ID="{917FD3A5-506E-439D-8124-E0154B401A11}"
+Name="SupervisorMSG"
+DisplayName="$Resources:SupervisorMSG"
+Description="$Resources:SupervisorMSG"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+  <Field
+       ID="{87C840C7-7DC6-42A3-AA5D-8F7C9C5C9BBC}"
+       Name="RequestGate"
+       DisplayName="$Resources:RequestGate"
+       Description="$Resources:RequestGate"
+       Type="Text"
+       Required="False"
+       Group="MOD SiteColumns">
+  </Field>
+
+
+  <Field
+     ID="{74755DE4-66A6-48AE-8B95-2F064C18239A}"
+     Name="FinalApproval"
+     DisplayName="$Resources:FinalApproval"
+     Description="$Resources:FinalApproval"
+     Type="Text"
+     Required="FALSE"
+     Group="MOD SiteColumns">
+  </Field>
+
+
+  <Field
+     ID="{51A41B32-0018-48E2-84EC-8AB8AEB8E71D}"
+     Name="IsDeleted"
+     DisplayName="$Resources:IsDeleted"
+     Description="$Resources:IsDeleted"
+     Type="Boolean"
+     Required="FALSE"
+     Group="MOD SiteColumns">
+    <Default>FALSE</Default>
+  </Field>
+
+
+</Elements>

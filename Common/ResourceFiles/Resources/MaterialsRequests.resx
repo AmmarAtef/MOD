@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accept" xml:space="preserve">
+    <value>قبول</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>تمت الموافقة</value>
+  </data>
+  <data name="AcceptMaterial" xml:space="preserve">
+    <value>الموافقة على طلب المادة</value>
+  </data>
+  <data name="AddNewMaterial" xml:space="preserve">
+    <value>أضف مادة أخرى+</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+  <data name="ApplicantName" xml:space="preserve">
+    <value>إسم مقدم الطلب</value>
+  </data>
+  <data name="ApplicantNameData" xml:space="preserve">
+    <value>بيانات مقدم الطلب</value>
+  </data>
+  <data name="AreYouSureYouWantToDelete" xml:space="preserve">
+    <value>هل تريد رفض هذا الطلب؟</value>
+  </data>
+  <data name="AreYouSureYouWantToDeleteYourRequest" xml:space="preserve">
+    <value>هل انت متأكد من انك تريد حذف طلبك ؟</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>تعليق</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+  <data name="DeleteEnterMaterialRequest" xml:space="preserve">
+    <value>تأكيد حذف</value>
+  </data>
+  <data name="DeleteMaterial" xml:space="preserve">
+    <value>حذف المادة</value>
+  </data>
+  <data name="DeleteRequestTitle" xml:space="preserve">
+    <value>حذف طلب دخول مواد</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>الإدارة</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>الإدارات</value>
+  </data>
+  <data name="EditMaterial" xml:space="preserve">
+    <value>تعديل المادة</value>
+  </data>
+  <data name="EditRequestDoneSuccessfully" xml:space="preserve">
+    <value>تم تعديل الطلب بنجاح</value>
+  </data>
+  <data name="EditRequestNotAvaliable" xml:space="preserve">
+    <value>غير مسموح لك بتعديل هذا الطلب</value>
+  </data>
+  <data name="EnteranceTime" xml:space="preserve">
+    <value>وقت الدخول</value>
+  </data>
+  <data name="EnterFromGate" xml:space="preserve">
+    <value>يتم الدخول من البوابة</value>
+  </data>
+  <data name="EntryTime" xml:space="preserve">
+    <value>وقت إدخال المواد</value>
+  </data>
+  <data name="ExitTime" xml:space="preserve">
+    <value>وقت الخروج</value>
+  </data>
+  <data name="FilterData" xml:space="preserve">
+    <value>تصفية النتائج</value>
+  </data>
+  <data name="Gate" xml:space="preserve">
+    <value>البوابة</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>قيد الإجراء</value>
+  </data>
+  <data name="lblDeviceMessageValue" xml:space="preserve">
+    <value>أهلا بك فى بوابة وزارة الدفاع</value>
+  </data>
+  <data name="MaterialEnterDate" xml:space="preserve">
+    <value>تاريخ دخول المواد</value>
+  </data>
+  <data name="MaterialInfoMessage" xml:space="preserve">
+    <value>ارسال طلب دخول مواد</value>
+  </data>
+  <data name="MaterialName" xml:space="preserve">
+    <value>إسم الصنف</value>
+  </data>
+  <data name="MaterialRequestPreview" xml:space="preserve">
+    <value>معاينة طلب دخول مواد</value>
+  </data>
+  <data name="MaterialsCount" xml:space="preserve">
+    <value>عدد المواد</value>
+  </data>
+  <data name="MaterialsLoginNotCompletedTillNow" xml:space="preserve">
+    <value>لم يتم تسديد دخول المادة حتى الآن</value>
+  </data>
+  <data name="MaterialsNotLoginInHisTime" xml:space="preserve">
+    <value>لم يتم دخول المادة فى الوقت المحدد</value>
+  </data>
+  <data name="MatrialInfo" xml:space="preserve">
+    <value>بيانات ادخال مواد</value>
+  </data>
+  <data name="MatrialInfoTitle" xml:space="preserve">
+    <value>بيانات المواد</value>
+  </data>
+  <data name="MatrialMsg" xml:space="preserve">
+    <value>المواد المطلوب إدخالها</value>
+  </data>
+  <data name="MatrialNotes" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="MatrialsName" xml:space="preserve">
+    <value>عددالأصناف</value>
+  </data>
+  <data name="MName" xml:space="preserve">
+    <value>إسم المادة</value>
+  </data>
+  <data name="MtiralEntryDate" xml:space="preserve">
+    <value>تاريخ إدخال المواد</value>
+  </data>
+  <data name="NewRequest" xml:space="preserve">
+    <value>طلب جديد</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>العدد</value>
+  </data>
+  <data name="PassRequest" xml:space="preserve">
+    <value>تمرير الطلب</value>
+  </data>
+  <data name="Posit" xml:space="preserve">
+    <value>الرتبة</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>المرتبة</value>
+  </data>
+  <data name="ProcessCompltedSuccessfully" xml:space="preserve">
+    <value>تم تنفيذ العملية بنجاح</value>
+    <comment>ذ</comment>
+  </data>
+  <data name="Quentity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="Redirect" xml:space="preserve">
+    <value>إعادة توجيه</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>رفض</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>مرفوض</value>
+  </data>
+  <data name="RejectMaterial" xml:space="preserve">
+    <value>رفض طلب المادة</value>
+  </data>
+  <data name="RequestAccepted" xml:space="preserve">
+    <value>قبول طلب</value>
+  </data>
+  <data name="RequestCreateDate" xml:space="preserve">
+    <value>تاريخ تقديم الطلب</value>
+  </data>
+  <data name="RequestDeletedSuccessfully" xml:space="preserve">
+    <value>تم حذف الطلب بنجاح</value>
+  </data>
+  <data name="RequestMessage" xml:space="preserve">
+    <value>رسالة الطلب</value>
+  </data>
+  <data name="RequestMsg" xml:space="preserve">
+    <value>رسالة الطلب</value>
+  </data>
+  <data name="RequestNumber" xml:space="preserve">
+    <value>رقم الطلب</value>
+  </data>
+  <data name="RequestReview" xml:space="preserve">
+    <value>معاينة طلب دخول مواد</value>
+  </data>
+  <data name="RequestSend" xml:space="preserve">
+    <value>إرسال الطلب</value>
+  </data>
+  <data name="RequestStatus" xml:space="preserve">
+    <value>حالة الطلب</value>
+  </data>
+  <data name="ReviewMaterialEnterRequest" xml:space="preserve">
+    <value>معاينة طلب دخول مادة</value>
+  </data>
+  <data name="ReviewRequest" xml:space="preserve">
+    <value>استعراض الطلب</value>
+  </data>
+  <data name="Rqam" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="SearchReset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>القسم</value>
+  </data>
+  <data name="Sections" xml:space="preserve">
+    <value>الأقسام</value>
+  </data>
+  <data name="security_SendResponsForEnterMaterials" xml:space="preserve">
+    <value>ارسال الرد على طلب ادخال مواد</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>إرسال طلب</value>
+  </data>
+  <data name="SendAddMaterialRequest" xml:space="preserve">
+    <value>ارسال طلب ادخال مواد</value>
+  </data>
+  <data name="SendEnterRequest" xml:space="preserve">
+    <value>إرسال طلب دخول المادة</value>
+  </data>
+  <data name="SomeThingError" xml:space="preserve">
+    <value>حدث خطأ أثناء تنفيذ العملية</value>
+  </data>
+  <data name="SupervisorID" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+  <data name="SupervisorInfo" xml:space="preserve">
+    <value>بيانات المندوب</value>
+  </data>
+  <data name="SupervisorName" xml:space="preserve">
+    <value>اسم المندوب</value>
+  </data>
+  <data name="ThereIsNoData" xml:space="preserve">
+    <value>لم يتم العثور على بيانات</value>
+  </data>
+  <data name="ThereIsNoNotes" xml:space="preserve">
+    <value>لا توجد ملاحظات</value>
+  </data>
+  <data name="TitleGate" xml:space="preserve">
+    <value>يتم الدخول من البوابة</value>
+  </data>
+  <data name="TitlePupApproved" xml:space="preserve">
+    <value>قبول طلب دخول المادة</value>
+  </data>
+  <data name="TitlePupRehect" xml:space="preserve">
+    <value>رفض طلب دخول المادة</value>
+  </data>
+  <data name="TNotes" xml:space="preserve">
+    <value>ملاحظات التسديد</value>
+  </data>
+  <data name="TotalAvaliableNumber" xml:space="preserve">
+    <value>العدد الاجمالي للسجلات المتوفرة</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>الصنف</value>
+  </data>
+  <data name="T_toEnterMaterialNotDoneTillNow" xml:space="preserve">
+    <value>لم يتم تسديد دخول المادة حتى الآن</value>
+  </data>
+  <data name="ViewMaterial" xml:space="preserve">
+    <value>عرض المادة</value>
+  </data>
+  <data name="ViewTodayDevicesRequest" xml:space="preserve">
+    <value>عرض تفاصيل دخول المواد</value>
+  </data>
+  <data name="ViewTodayMaterialRequests" xml:space="preserve">
+    <value>عرض تفاصيل المواد لليوم</value>
+  </data>
+  <data name="VisitTime" xml:space="preserve">
+    <value>وقت الزيارة</value>
+  </data>
+  <data name="WorkingPlace" xml:space="preserve">
+    <value>جهة العمل</value>
+  </data>
+  <data name="YouCanNotEnterRequestsWithOldDate" xml:space="preserve">
+    <value>لا يمكن إدخال طلبات بتاريخ قديم</value>
+  </data>
+  <data name="YouCanNotEnterRequestWithOldDate" xml:space="preserve">
+    <value>لايمكن إدخال طلبات بتاريخ قديم</value>
+  </data>
+  <data name="YouMustEnterValueInThisField" xml:space="preserve">
+    <value>يجب إدخال قيمة لهذا الحقل</value>
+  </data>
+  <data name="YourRequestSendSuccessfully" xml:space="preserve">
+    <value>تم ارسال طلبك بنجاح</value>
+  </data>
+</root>

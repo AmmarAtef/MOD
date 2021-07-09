@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SupervisorDevicesRequestStatus" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SupervisorDevicesRequestStatus" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100458EE6F17778431DB91B4F42534E22EC" Name="SupervisorDevicesRequestStatusCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{F496F6A6-2B71-47A1-83C7-1AD5B54DFE8F}" DisplayName="$Resources:Depratment" Required="TRUE" Description="$Resources:Depratment" Name="Depratment" /><FieldRef ID="{1255CB16-9065-41A8-B4AC-E73D17E82C9D}" DisplayName="$Resources:RequestID" Required="TRUE" Hidden="FALSE" Name="RequestID" ReadOnly="FALSE" /><FieldRef ID="{1FC79891-2733-45DE-9724-5CE2D5734657}" DisplayName="$Resources:Status" Required="TRUE" Description="$Resources:Status" Name="Status" /><FieldRef ID="{06A8AE60-6F00-4776-8327-546A9819737B}" DisplayName="$Resources:ApprovalNote" Required="TRUE" Description="$Resources:ApprovalNote" Name="ApprovalNote" NumLines="10" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{F496F6A6-2B71-47A1-83C7-1AD5B54DFE8F}" Name="Depratment" DisplayName="$Resources:Depratment" Description="$Resources:Depratment" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{1255CB16-9065-41A8-B4AC-E73D17E82C9D}" Name="RequestID" DisplayName="$Resources:RequestID" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/DevicesRequests" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="ID"></Field><Field ID="{1FC79891-2733-45DE-9724-5CE2D5734657}" Name="Status" DisplayName="$Resources:Status" Description="$Resources:Status" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{06A8AE60-6F00-4776-8327-546A9819737B}" Name="ApprovalNote" DisplayName="$Resources:ApprovalNote" Description="$Resources:ApprovalNote" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="TRUE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Depratment" /><FieldRef Name="RequestID" /><FieldRef Name="Status" /><FieldRef Name="ApprovalNote" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

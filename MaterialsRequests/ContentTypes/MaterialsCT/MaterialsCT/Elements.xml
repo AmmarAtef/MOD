@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01008666B93A5BB94E25A672CCF12746EA20" Name="MaterialsCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{9DA36198-2F53-4A83-9850-B9686DEE3F23}" DisplayName="$Resources:MaterialName" Required="TRUE" Description="$Resources:MaterialName" Name="MaterialName" />
+      <FieldRef ID="{0066533A-5E21-45A9-90BE-3C22716A804C}" DisplayName="$Resources:Quantity" Required="TRUE" Description="$Resources:Quantity" Name="Quantity" />
+      <FieldRef ID="{91533C3E-31D6-4F90-A49B-540D9F810CC5}" DisplayName="$Resources:ActionTime" Required="TRUE" Description="$Resources:ActionTime" Name="ActionTime" />
+      <FieldRef ID="{5D18F540-ACCF-46E8-9AED-F85B678C0BE9}" DisplayName="$Resources:RequestID" Required="TRUE" Hidden="FALSE" Name="RequestID" ReadOnly="FALSE" />
+      <FieldRef ID="{38C95A78-5D7D-4D0C-9A61-5A20447A8CFF}" DisplayName="$Resources:IsDeleted" Required="FALSE" Description="$Resources:IsDeleted" Name="IsMaterialDeleted" />
+      <FieldRef ID="{A1E9635E-5B79-401A-99BB-CB8C22A50C3B}" DisplayName="$Resources:Notes" Required="TRUE" Description="$Resources:Notes" Name="MaterialNotes" NumLines="10" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

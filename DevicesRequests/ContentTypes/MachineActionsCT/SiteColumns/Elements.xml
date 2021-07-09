@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+    ID="{58F3FE56-2301-4B58-985A-844D7028B112}"
+    Name="DeviceID"
+  DisplayName="$Resources:DeviceID"
+    Type="Lookup"
+     Required="TRUE"
+      Overwrite="TRUE"
+     Group="MOD SiteColumns"
+      EnforceUniqueValues="FALSE" List="Lists/RequestMachinesApproval"
+      PrependId="TRUE"
+      Hidden="FALSE"
+      ReadOnly="FALSE" ShowField="DeviceType">
+  </Field>
+
+  <Field
+      ID="{9F46633B-DC10-4A12-AA10-658509B553CA}"
+      Name="ActionDate"
+      DisplayName="$Resources:ActionDate"
+      Description="$Resources:ActionDate"
+      Type="DateTime"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+ID="{50769B75-C97D-4F61-89C6-DF576CE12A00}"
+Name="ActionNotes"
+DisplayName="$Resources:ActionNotes"
+Description="$Resources:ActionNotes"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+  
+</Elements>

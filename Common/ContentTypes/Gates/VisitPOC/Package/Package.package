@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="dc7f8059-8510-41eb-b28b-d83be1dc4ce6" solutionId="dc7f8059-8510-41eb-b28b-d83be1dc4ce6" resetWebServer="false" sharePointProductVersion="19.0" name="VisitPOC" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b96c58ed-edc1-445f-974b-b61fe16e1ab5" />
+  </features>
+</package>

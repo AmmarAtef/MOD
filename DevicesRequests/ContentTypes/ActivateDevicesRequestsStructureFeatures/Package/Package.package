@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d0eeb09a-9ec7-4da7-85da-d0a123094743" solutionId="d0eeb09a-9ec7-4da7-85da-d0a123094743" resetWebServer="false" sharePointProductVersion="19.0" name="ActivateDevicesRequestsStructureFeatures" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a4cdefc2-0bd4-478f-9620-307b78dd5a9c" />
+  </features>
+</package>

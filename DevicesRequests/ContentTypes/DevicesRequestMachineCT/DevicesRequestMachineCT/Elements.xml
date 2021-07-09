@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01009B603198E2E344579E573F6E92248814" Name="DevicesRequestMachineCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{DE82D031-21FE-4312-BBD2-6D755A3BBAE3}" DisplayName="$Resources:DeviceType" Required="TRUE" Description="$Resources:DeviceType" Name="DeviceType" />
+      <FieldRef ID="{813325A9-75D5-4E18-8FF1-F8D097E9CE35}" DisplayName="$Resources:ItemsCount" Required="TRUE" Description="$Resources:ItemsCount" Name="ItemsCount" />
+      <FieldRef ID="{8494EC63-98AA-453C-9EA6-560DE70E658C}" DisplayName="$Resources:DeviceNumber" Required="FALSE" Description="$Resources:DeviceNumber" Name="DeviceNumber" />
+      <FieldRef ID="{DBABAA01-EA46-4238-A34F-E29775C28A64}" DisplayName="$Resources:ManufacturingCompanyName" Required="FALSE" Description="$Resources:ManufacturingCompanyName" Name="ManufacturingCompanyName" />
+      <FieldRef ID="{0E3F7505-FFB1-4DDD-8891-EECB40BFBB05}" DisplayName="$Resources:NotesAboutDevice" Required="FALSE" Description="$Resources:NotesAboutDevice" Name="NotesAboutDevice" NumLines="10" />
+      <FieldRef ID="{53C4BB10-F4F0-47C1-9A4E-16FCEB28122B}" DisplayName="$Resources:DevicesRequestID" Required="TRUE" Hidden="FALSE" Name="DevicesRequestID" ReadOnly="FALSE" />
+      <FieldRef ID="{CBDB2E81-F41F-4AAC-95B9-527C3ADBF3D0}" DisplayName="$Resources:IsDeleted" Required="FALSE" Description="$Resources:IsDeleted" Name="IsMachineDeleted" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

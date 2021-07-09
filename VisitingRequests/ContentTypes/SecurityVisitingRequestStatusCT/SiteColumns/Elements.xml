@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+      ID="{0853E1BB-67C5-42F1-8D77-013FD78EFBEA}"
+      Name="SecurityDepratment"
+      DisplayName="$Resources:SecurityDepratment"
+      Description="$Resources:SecurityDepratment"
+      Type="Text"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+      ID="{6F30A198-1E11-49FF-9EED-0B087546BEA5}"
+      Name="SecurityVisitingRequestID"
+      DisplayName="$Resources:SecurityVisitingRequestID"
+      Type="Lookup"
+       Required="TRUE"
+        Overwrite="TRUE"
+       Group="MOD SiteColumns"
+        EnforceUniqueValues="FALSE" List="Lists/VisitingRequest"
+        PrependId="TRUE"
+        Hidden="FALSE"
+        ReadOnly="FALSE" ShowField="ID">
+  </Field>
+
+  <Field
+      ID="{072C974E-0E9E-4CAA-B86A-358C68256E9D}"
+      Name="SecurityStatus"
+      DisplayName="$Resources:SecurityStatus"
+      Description="$Resources:SecurityStatus"
+      Type="Text"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+ID="{5F6854F6-6C2E-495C-AEE7-BC455603FA00}"
+Name="SecurityApprovalNote"
+DisplayName="$Resources:SecurityApprovalNote"
+Description="$Resources:SecurityApprovalNote"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="TRUE"
+/>
+
+  <!--<Field
+      ID="{7744D309-A2A4-4B9C-98FB-9B5E113E1AAB}"
+      Name="Gate"
+      DisplayName="$Resources:Gate"
+      Type="Lookup"
+       Required="TRUE"
+        Overwrite="TRUE"
+       Group="MOD SiteColumns"
+        EnforceUniqueValues="FALSE" List="Lists/Gates"
+        PrependId="TRUE"
+        Hidden="FALSE"
+        ReadOnly="FALSE" ShowField="Title">
+  </Field>-->
+
+
+</Elements>

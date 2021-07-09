@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field
+       ID="{89FA1010-B099-42F9-809A-A0D80EA14B4E}"
+       Name="PersonFirstName"
+       DisplayName="$Resources:PersonFirstName"
+       Description="$Resources:PersonFirstName"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+  <Field
+       ID="{FE9657BD-BDB7-4E53-811C-A2E92CBCFF31}"
+       Name="PersonFatherName"
+       DisplayName="$Resources:PersonFatherName"
+       Description="$Resources:PersonFatherName"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+       ID="{EB48788B-29C9-43C2-AB09-9FD44BEC1D7F}"
+       Name="PersonFamilyName"
+       DisplayName="$Resources:PersonFamilyName"
+       Description="$Resources:PersonFamilyName"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+       ID="{EB050703-345D-4856-83FC-12D2104B0B96}"
+       Name="PersonLastName"
+       DisplayName="$Resources:PersonLastName"
+       Description="$Resources:PersonLastName"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+    ID="{455E50A2-BA62-45B7-854A-26EE3EAC32D3}"
+    Name="Nationality"
+  DisplayName="$Resources:Nationality"
+    Type="Lookup"
+     Required="TRUE"
+      Overwrite="TRUE"
+     Group="MOD SiteColumns"
+      EnforceUniqueValues="FALSE" List="Lists/Nationality"
+      PrependId="TRUE"
+      Hidden="FALSE"
+      ReadOnly="FALSE" ShowField="Title">
+  </Field>
+
+  <Field
+     ID="{3C91FA95-C323-461F-9269-E71513C23584}"
+     Name="IdentityNumber"
+     DisplayName="$Resources:IdentityNumber"
+     Description="$Resources:IdentityNumber"
+     Type="Text"
+     Required="TRUE"
+     Group="MOD SiteColumns">
+  </Field>
+  
+  
+  <Field
+  ID="{41FEA7F7-E76E-46DC-874C-95FCA1E73971}"
+  Name="IdentityType"
+DisplayName="$Resources:IdentityType"
+  Type="Lookup"
+   Required="TRUE"
+    Overwrite="TRUE"
+   Group="MOD SiteColumns"
+    EnforceUniqueValues="FALSE" List="Lists/Identity"
+    PrependId="TRUE"
+    Hidden="FALSE"
+    ReadOnly="FALSE" ShowField="Title">
+  </Field>
+
+  <Field
+       ID="{0D8A1B78-1075-46F9-88E4-60554327EC95}"
+       Name="WorkingPlace"
+       DisplayName="$Resources:WorkingPlace"
+       Description="$Resources:WorkingPlace"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+  
+  <Field
+      ID="{159DCFB0-7AA9-4882-B7C9-E577E21CC5CE}"
+      Name="VisitingRequestID"
+    DisplayName="$Resources:VisitingRequestID"
+      Type="Lookup"
+       Required="TRUE"
+        Overwrite="TRUE"
+       Group="MOD SiteColumns"
+        EnforceUniqueValues="FALSE" List="Lists/VisitingRequest"
+        PrependId="TRUE"
+        Hidden="FALSE"
+        ReadOnly="FALSE" ShowField="ID">
+  </Field>
+
+  <Field
+       ID="{53A1D65B-172A-4CD7-9C3F-83EF2B112C32}"
+       Name="VisitingTime"
+       DisplayName="$Resources:VisitingTime"
+       Description="$Resources:VisitingTime"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+     ID="{4D56DE43-C2E1-4DD1-AC53-7361C4C00D93}"
+     Name="IsVisitPersonDeleted"
+     DisplayName="$Resources:IsVisitPersonDeleted"
+     Description="$Resources:IsVisitPersonDeleted"
+     Type="Boolean"
+     Required="FALSE"
+     Group="MOD SiteColumns">
+    <Default>FALSE</Default>
+  </Field>
+
+</Elements>

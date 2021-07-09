@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100054BC5C3A0414666BD2F922783A71303" Name="MaterialActionsCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{1D743739-8B5E-4036-A4CE-AA4CEE44F7DE}" DisplayName="$Resources:MaterialID" Required="TRUE" Hidden="FALSE" Name="MaterialID" ReadOnly="FALSE" />
+      <FieldRef ID="{27FA0646-395C-41CD-A92D-B33EED43F145}" DisplayName="$Resources:ActionDate" Required="TRUE" Description="$Resources:ActionDate" Name="ActionDate" />
+      <FieldRef ID="{C6B900A1-E13B-493D-849C-733BC7E8153B}" DisplayName="$Resources:ActionNotes" Required="False" Description="$Resources:ActionNotes" Name="ActionNotes" NumLines="10" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

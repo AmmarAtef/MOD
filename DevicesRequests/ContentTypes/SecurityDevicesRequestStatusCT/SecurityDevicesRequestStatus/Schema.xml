@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SecurityDevicesRequestStatus" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SecurityDevicesRequestStatus" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01001356973B74E1405985E6EF09885378A3" Name="SecurityDevicesRequestStatusCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{459E7A56-1D53-407D-B380-301ECEFD7AEE}" DisplayName="$Resources:SecurityDepratment" Required="TRUE" Description="$Resources:SecurityDepratment" Name="SecurityDepratment" /><FieldRef ID="{48939C9A-F823-4F51-AB37-0B0AE62F1A38}" DisplayName="$Resources:SecurityRequestID" Required="TRUE" Hidden="FALSE" Name="SecurityRequestID" ReadOnly="FALSE" /><FieldRef ID="{9784E866-8047-43D6-8CBD-7C2581A0844C}" DisplayName="$Resources:SecurityStatus" Required="TRUE" Description="$Resources:SecurityStatus" Name="SecurityStatus" /><FieldRef ID="{00112673-AB96-4A63-A7FF-17245A47F096}" DisplayName="$Resources:SecurityApprovalNote" Required="FALSE" Description="$Resources:SecurityApprovalNote" Name="SecurityApprovalNote" NumLines="10" /><FieldRef ID="{513c9e3f-eb35-4a42-bbfc-ec5295c3acc0}" DisplayName="البوابة" Required="TRUE" Hidden="FALSE" Name="GatesLookup" ReadOnly="FALSE" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{459E7A56-1D53-407D-B380-301ECEFD7AEE}" Name="SecurityDepratment" DisplayName="$Resources:SecurityDepratment" Description="$Resources:SecurityDepratment" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{48939C9A-F823-4F51-AB37-0B0AE62F1A38}" Name="SecurityRequestID" DisplayName="$Resources:SecurityRequestID" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/DevicesRequests" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="ID"></Field><Field ID="{9784E866-8047-43D6-8CBD-7C2581A0844C}" Name="SecurityStatus" DisplayName="$Resources:SecurityStatus" Description="$Resources:SecurityStatus" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{00112673-AB96-4A63-A7FF-17245A47F096}" Name="SecurityApprovalNote" DisplayName="$Resources:SecurityApprovalNote" Description="$Resources:SecurityApprovalNote" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="FALSE" /><Field ID="{513c9e3f-eb35-4a42-bbfc-ec5295c3acc0}" Name="GatesLookup" DisplayName="البوابة" Type="Lookup" Required="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="{716C64DB-5D20-4B2B-9BCF-D17A2277EC40}" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="Title" WebId="{a42b8ff4-3fcf-4d52-b1ef-2e33a6fa1aab}" SourceID="{a42b8ff4-3fcf-4d52-b1ef-2e33a6fa1aab}" StaticName="GatesLookup"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="SecurityDepratment" /><FieldRef Name="SecurityRequestID" /><FieldRef Name="SecurityStatus" /><FieldRef Name="SecurityApprovalNote" /><FieldRef Name="GatesLookup" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

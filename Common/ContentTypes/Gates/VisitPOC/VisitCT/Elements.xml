@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100D6BF23F1BD3E449384ECB4431A6537D3" Name="VisitCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{596A5C5B-49CE-4511-9857-0199068B9468}" DisplayName="Column1" Required="False" Description="Column1" Name="Column1" />
+      <FieldRef ID="{c2c6f1ab-fe93-4a1c-9da8-fd2130346287}" DisplayName="GateLookup" Required="TRUE" Hidden="FALSE" Name="GateLookup" ReadOnly="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

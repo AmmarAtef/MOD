@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010069DFA9F2AA3040BAAB92D412F54E2521" Name="VisitingRequestMachineCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{E033A48F-11CD-487D-A9A0-0BC6C079F21B}" DisplayName="$Resources:DeviceType" Required="TRUE" Description="$Resources:DeviceType" Name="DeviceType" />
+      <FieldRef ID="{30F06FD5-0018-4392-8019-8AABE3CB2174}" DisplayName="$Resources:DeviceNumber" Required="TRUE" Description="$Resources:DeviceNumber" Name="DeviceNumber" />
+      <FieldRef ID="{331FA2B8-5B6C-495F-8156-BF3A2DE29919}" DisplayName="$Resources:ManufacturingCompanyName" Required="TRUE" Description="$Resources:ManufacturingCompanyName" Name="ManufacturingCompanyName" />
+      <FieldRef ID="{13886187-A55B-4578-B4AF-051E32E1D73D}" DisplayName="$Resources:NotesAboutDevice" Required="TRUE" Description="$Resources:NotesAboutDevice" Name="NotesAboutDevice" NumLines="10" />
+      <FieldRef ID="{A03C6705-AFE1-4F3C-8B6C-3D5C3FECCBDF}" DisplayName="$Resources:PersonVisitingRequestID" Required="TRUE" Hidden="FALSE" Name="PersonVisitingRequestID" ReadOnly="FALSE" />
+      <FieldRef ID="{44ED28C9-F07D-4954-ACF2-56D952403F74}" DisplayName="$Resources:VisitingRequestPersons" Required="TRUE" Hidden="FALSE" Name="VisitingRequestPersons" ReadOnly="FALSE" />
+      <FieldRef ID="{DEE00028-AB4D-4965-8CF2-D59BDBFA6955}" DisplayName="$Resources:IsDeleted" Required="FALSE" Description="$Resources:IsDeleted" Name="IsVisitMachineDeleted" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

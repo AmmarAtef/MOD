@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6c0878eb-77d8-4bfb-a7cc-33aaa5616891" solutionId="6c0878eb-77d8-4bfb-a7cc-33aaa5616891" resetWebServer="false" sharePointProductVersion="19.0" name="SecurityMaterialsRequestStatusCT" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f6a1f003-1d66-4e05-af1d-d2a539f1b8d0" />
+    <featureReference itemId="047c0a88-8308-41b9-a2dd-6c518beaea20" />
+  </features>
+</package>

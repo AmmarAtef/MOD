@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MachineActions" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MachineActions" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100CE1DA7D20D7249C2A0E425B3C2BDCBF9" Name="MachineActionsCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{58F3FE56-2301-4B58-985A-844D7028B112}" DisplayName="$Resources:DeviceID" Required="TRUE" Hidden="FALSE" Name="DeviceID" ReadOnly="FALSE" /><FieldRef ID="{9F46633B-DC10-4A12-AA10-658509B553CA}" DisplayName="$Resources:ActionDate" Required="TRUE" Description="$Resources:ActionDate" Name="ActionDate" /><FieldRef ID="{50769B75-C97D-4F61-89C6-DF576CE12A00}" DisplayName="$Resources:ActionNotes" Required="False" Description="$Resources:ActionNotes" Name="ActionNotes" NumLines="10" /></FieldRefs></ContentType><ContentType ID="0x01002da0f9e0e02246f5a8f76326049495c3" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{58F3FE56-2301-4B58-985A-844D7028B112}" Name="DeviceID" /><FieldRef ID="{9F46633B-DC10-4A12-AA10-658509B553CA}" Name="ActionDate" /><FieldRef ID="{50769B75-C97D-4F61-89C6-DF576CE12A00}" Name="ActionNotes" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{58F3FE56-2301-4B58-985A-844D7028B112}" Name="DeviceID" DisplayName="$Resources:DeviceID" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/RequestMachinesApproval" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="DeviceType"></Field><Field ID="{9F46633B-DC10-4A12-AA10-658509B553CA}" Name="ActionDate" DisplayName="$Resources:ActionDate" Description="$Resources:ActionDate" Type="DateTime" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{50769B75-C97D-4F61-89C6-DF576CE12A00}" Name="ActionNotes" DisplayName="$Resources:ActionNotes" Description="$Resources:ActionNotes" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="False" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="DeviceID" /><FieldRef Name="ActionDate" /><FieldRef Name="ActionNotes" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

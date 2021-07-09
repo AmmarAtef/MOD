@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100359A6580F9614EF8983ADEC1846A8327" Name="MaterialsRequestCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{D5A91234-405D-469F-B70C-9697670340F4}" DisplayName="$Resources:RequestType" Required="TRUE" Description="$Resources:RequestType" Name="RequestType" ReadOnly="TRUE" />
+      <FieldRef ID="{DD526C94-843F-4623-99D5-4AD2A5ABA02E}" DisplayName="$Resources:RequestMessage" Required="TRUE" Description="$Resources:RequestMessage" Name="RequestMessage" />
+      <FieldRef ID="{5047A5D3-0F8C-4D98-AF2E-D507A66E2F9D}" DisplayName="$Resources:RequestDate" Required="TRUE" Description="$Resources:RequestDate" Name="RequestDate" />
+      <FieldRef ID="{900D6699-D5A3-4B32-A126-8F42530133D6}" DisplayName="$Resources:SupervisorName" Required="TRUE" Description="$Resources:SupervisorName" Name="SupervisorName" />
+      <FieldRef ID="{28308296-5690-4AE3-873A-0898B4B6BF9C}" DisplayName="$Resources:IdentityNumber" Required="TRUE" Description="$Resources:IdentityNumber" Name="IdentityNumber" />
+      <FieldRef ID="{27C84427-EB4A-4499-9293-566085840233}" DisplayName="$Resources:WorkingPlace" Required="TRUE" Description="$Resources:WorkingPlace" Name="WorkingPlace" />
+      <FieldRef ID="{EC1C1647-A62C-462B-9A2C-1406C28183AC}" DisplayName="$Resources:ApplicantName" Required="TRUE" Description="$Resources:ApplicantName" Name="ApplicantName" />
+      <FieldRef ID="{740832BC-8309-406D-B9C5-60399728B9C1}" DisplayName="$Resources:ApplicantRank" Required="TRUE" Description="$Resources:ApplicantRank" Name="ApplicantRank" />
+      <FieldRef ID="{0403DA3A-BC57-4025-9A88-9673615B67E5}" DisplayName="$Resources:ApplicantSection" Required="TRUE" Description="$Resources:ApplicantSection" Name="ApplicantSection" />
+      <FieldRef ID="{F3443FF3-63AA-444B-AF19-5697116970B1}" DisplayName="$Resources:ApplicantAdministration" Required="TRUE" Description="$Resources:ApplicantAdministration" Name="ApplicantAdministration" />
+      <FieldRef ID="{5B0A91A6-5AC3-4DC1-8F94-D493C241BD95}" DisplayName="$Resources:SupervisorMSG" Required="False" Description="$Resources:SupervisorMSG" Name="SupervisorMSG" NumLines="10" />
+      <FieldRef ID="{F764EF06-DD0A-4D57-B006-C55CB0614402}" DisplayName="$Resources:SecurityMSG" Required="False" Description="$Resources:SecurityMSG" Name="SecurityMSG" NumLines="10" />
+      <FieldRef ID="{EA605FE7-CE3A-49DE-BF52-C32C0F13DCCB}" DisplayName="$Resources:FinalApproval" Required="FALSE" Description="$Resources:FinalApproval" Name="FinalApproval" />
+      <FieldRef ID="{B8ADB340-7A1E-485B-8C23-A8B7D63A254B}" DisplayName="$Resources:RequestGate" Required="False" Description="$Resources:RequestGate" Name="RequestGate" />
+      <FieldRef ID="{C3FC8C98-BF4A-47F0-A7A0-6BA61B9F59F7}" DisplayName="$Resources:IsDeleted" Required="FALSE" Description="$Resources:IsDeleted" Name="IsDeleted" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

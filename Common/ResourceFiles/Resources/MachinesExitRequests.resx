@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CompanyName" xml:space="preserve">
+    <value>إسم الشركة المصنعة</value>
+  </data>
+  <data name="DelegateData" xml:space="preserve">
+    <value>بيانات المندوب</value>
+  </data>
+  <data name="DelegateID" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+  <data name="DelegateName" xml:space="preserve">
+    <value>إسم المندوب</value>
+  </data>
+  <data name="DelegateWork" xml:space="preserve">
+    <value>جهة العمل</value>
+  </data>
+  <data name="DeleteRequestTitle" xml:space="preserve">
+    <value>حذف طلب خروج أجهزة</value>
+  </data>
+  <data name="DeviceEnterTime" xml:space="preserve">
+    <value>وقت إخراج الأجهزة</value>
+  </data>
+  <data name="DeviceLoginNotCompletedTillNow" xml:space="preserve">
+    <value>لم يتم تسديد خروج الجهاز حتى الآن</value>
+  </data>
+  <data name="DeviceNotes" xml:space="preserve">
+    <value>ملاحظات حول الجهاز</value>
+  </data>
+  <data name="DeviceNumber" xml:space="preserve">
+    <value>رقم الجهاز</value>
+  </data>
+  <data name="DeviceRequestEditSend" xml:space="preserve">
+    <value>تعديل الطلب</value>
+  </data>
+  <data name="DeviceRequestReview" xml:space="preserve">
+    <value>معاينة الطلب</value>
+  </data>
+  <data name="DeviceRequestSend" xml:space="preserve">
+    <value>إرسال الطلب</value>
+  </data>
+  <data name="Devices" xml:space="preserve">
+    <value>الأجهزة</value>
+  </data>
+  <data name="DevicesCount" xml:space="preserve">
+    <value>العدد</value>
+  </data>
+  <data name="DevicesData" xml:space="preserve">
+    <value>بيانات الأجهزة</value>
+  </data>
+  <data name="DevicesEnterDate" xml:space="preserve">
+    <value>تاريخ إخراج الأجهزة</value>
+  </data>
+  <data name="DeviceType" xml:space="preserve">
+    <value>نوع الجهاز</value>
+  </data>
+  <data name="EnterTime" xml:space="preserve">
+    <value>وقت الخروج</value>
+  </data>
+  <data name="GridTitle_DeviceName" xml:space="preserve">
+    <value>إسم الجهاز</value>
+  </data>
+  <data name="GridTitle_DeviceType" xml:space="preserve">
+    <value>نوع الجهاز</value>
+  </data>
+  <data name="GridTitle_RequestDate" xml:space="preserve">
+    <value>تاريخ تقديم الطلب</value>
+  </data>
+  <data name="GridTitle_RequestDelegateName" xml:space="preserve">
+    <value>إسم المندوب</value>
+  </data>
+  <data name="GridTitle_RequestEnterDate" xml:space="preserve">
+    <value>تاريخ إخراج الأجهزة</value>
+  </data>
+  <data name="GridTitle_RequestNumber" xml:space="preserve">
+    <value>رقم الطلب</value>
+  </data>
+  <data name="GridTitle_RequestOwnerName" xml:space="preserve">
+    <value>إسم مقدم الطلب</value>
+  </data>
+  <data name="GridTitle_RequestStatus" xml:space="preserve">
+    <value>حالة الطلب</value>
+  </data>
+  <data name="ItemCount" xml:space="preserve">
+    <value>عدد الأجهزة</value>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>تاريخ تقديم الطلب</value>
+  </data>
+  <data name="RequestMessage" xml:space="preserve">
+    <value>رسالة الطلب</value>
+  </data>
+  <data name="RequestReview" xml:space="preserve">
+    <value>إستعراض الطلب</value>
+  </data>
+  <data name="SearchReset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="security_ApplicantDegree" xml:space="preserve">
+    <value>المرتبة</value>
+  </data>
+  <data name="security_ApplicantDepartment" xml:space="preserve">
+    <value>الادارة</value>
+  </data>
+  <data name="security_ApplicantSection" xml:space="preserve">
+    <value>القسم</value>
+  </data>
+  <data name="security_SendResponsForEnterDevice" xml:space="preserve">
+    <value>إرسال الرد على طلب اخراج اجهزة</value>
+  </data>
+  <data name="security__acceptButton" xml:space="preserve">
+    <value>قبول</value>
+  </data>
+  <data name="security__acceptEnterDevices" xml:space="preserve">
+    <value>قبول طلب اخراج أجهزة</value>
+  </data>
+  <data name="security__ApplicantData" xml:space="preserve">
+    <value>بيانات مقدم الطلب</value>
+  </data>
+  <data name="security__ApplicantName" xml:space="preserve">
+    <value>إسم مقدم الطلب</value>
+  </data>
+  <data name="security__ApplicantSection" xml:space="preserve">
+    <value>الإدارة</value>
+  </data>
+  <data name="security__comment" xml:space="preserve">
+    <value>تعليق</value>
+  </data>
+  <data name="security__deviceEnterDate" xml:space="preserve">
+    <value>تاريخ إخراج الأجهزة</value>
+  </data>
+  <data name="security__devicesInfo" xml:space="preserve">
+    <value>بيانات الأجهزة</value>
+  </data>
+  <data name="security__gate" xml:space="preserve">
+    <value>البوابة</value>
+  </data>
+  <data name="security__IdentityNumber" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+  <data name="security__notes" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="security__number" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="security__rejectButton" xml:space="preserve">
+    <value>رفض</value>
+  </data>
+  <data name="security__rejectEnterDevice" xml:space="preserve">
+    <value>رفض طلب خروج الجهاز</value>
+  </data>
+  <data name="security__requestCreationDate" xml:space="preserve">
+    <value>تاريخ خروج الجهاز</value>
+  </data>
+  <data name="security__RequestEntryDevices" xml:space="preserve">
+    <value>معاينة طلب خروج أجهزة</value>
+  </data>
+  <data name="security__supervisorInfo" xml:space="preserve">
+    <value>بيانات المندوب</value>
+  </data>
+  <data name="security__supervisorName" xml:space="preserve">
+    <value>إسم لمندوب</value>
+  </data>
+  <data name="security__workPlace" xml:space="preserve">
+    <value>جهة العمل</value>
+  </data>
+  <data name="SendAddDevicesRequest" xml:space="preserve">
+    <value>إرسال طلب اخراج اجهزة</value>
+  </data>
+  <data name="TitleGate" xml:space="preserve">
+    <value>يتم الخروج من البوابة</value>
+  </data>
+  <data name="viewTodayDevicesRequest" xml:space="preserve">
+    <value>عرض تفاصيل خروج الأجهزة</value>
+  </data>
+</root>

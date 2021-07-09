@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SupervisorMaterialsRequestStatus" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SupervisorMaterialsRequestStatus" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100A986CCD211F44FC0B3D6DEBA6A9EA89F" Name="SupervisorMaterialsRequestStatusCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{CF170A4D-3826-455B-A048-7550B3E6CA5D}" DisplayName="$Resources:Depratment" Required="TRUE" Description="$Resources:Depratment" Name="Depratment" /><FieldRef ID="{0111E19F-369D-4080-BF8E-6D45608606E9}" DisplayName="$Resources:RequestID" Required="TRUE" Hidden="FALSE" Name="RequestID" ReadOnly="FALSE" /><FieldRef ID="{3B0E73B3-BDF9-4F4F-A12C-45116B8B460D}" DisplayName="$Resources:Status" Required="TRUE" Description="$Resources:Status" Name="Status" /><FieldRef ID="{520B1A38-2C20-4BB2-887B-84A8B21CD51C}" DisplayName="$Resources:ApprovalNote" Required="TRUE" Description="$Resources:ApprovalNote" Name="ApprovalNote" NumLines="10" /></FieldRefs></ContentType><ContentType ID="0x0100f585d2cfd60045bb942333f0814eb4eb" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{CF170A4D-3826-455B-A048-7550B3E6CA5D}" Name="Depratment" /><FieldRef ID="{0111E19F-369D-4080-BF8E-6D45608606E9}" Name="RequestID" /><FieldRef ID="{3B0E73B3-BDF9-4F4F-A12C-45116B8B460D}" Name="Status" /><FieldRef ID="{520B1A38-2C20-4BB2-887B-84A8B21CD51C}" Name="ApprovalNote" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{CF170A4D-3826-455B-A048-7550B3E6CA5D}" Name="Depratment" DisplayName="$Resources:Depratment" Description="$Resources:Depratment" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{0111E19F-369D-4080-BF8E-6D45608606E9}" Name="RequestID" DisplayName="$Resources:RequestID" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/MaterialsRequests" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="ID"></Field><Field ID="{3B0E73B3-BDF9-4F4F-A12C-45116B8B460D}" Name="Status" DisplayName="$Resources:Status" Description="$Resources:Status" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{520B1A38-2C20-4BB2-887B-84A8B21CD51C}" Name="ApprovalNote" DisplayName="$Resources:ApprovalNote" Description="$Resources:ApprovalNote" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="TRUE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Depratment" /><FieldRef Name="RequestID" /><FieldRef Name="Status" /><FieldRef Name="ApprovalNote" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

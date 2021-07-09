@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MaterialsApproval" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MaterialsApproval" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01008666B93A5BB94E25A672CCF12746EA20" Name="MaterialsCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{9DA36198-2F53-4A83-9850-B9686DEE3F23}" DisplayName="$Resources:MaterialName" Required="TRUE" Description="$Resources:MaterialName" Name="MaterialName" /><FieldRef ID="{0066533A-5E21-45A9-90BE-3C22716A804C}" DisplayName="$Resources:Quantity" Required="TRUE" Description="$Resources:Quantity" Name="Quantity" /><FieldRef ID="{91533C3E-31D6-4F90-A49B-540D9F810CC5}" DisplayName="$Resources:ActionTime" Required="TRUE" Description="$Resources:ActionTime" Name="ActionTime" /><FieldRef ID="{5D18F540-ACCF-46E8-9AED-F85B678C0BE9}" DisplayName="$Resources:RequestID" Required="TRUE" Hidden="FALSE" Name="RequestID" ReadOnly="FALSE" /><FieldRef ID="{38C95A78-5D7D-4D0C-9A61-5A20447A8CFF}" DisplayName="$Resources:IsDeleted" Required="FALSE" Description="$Resources:IsDeleted" Name="IsMaterialDeleted" /><FieldRef ID="{A1E9635E-5B79-401A-99BB-CB8C22A50C3B}" DisplayName="$Resources:Notes" Required="TRUE" Description="$Resources:Notes" Name="MaterialNotes" NumLines="10" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{9DA36198-2F53-4A83-9850-B9686DEE3F23}" Name="MaterialName" DisplayName="$Resources:MaterialName" Description="$Resources:MaterialName" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{0066533A-5E21-45A9-90BE-3C22716A804C}" Name="Quantity" DisplayName="$Resources:Quantity" Description="$Resources:Quantity" Type="Number" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{91533C3E-31D6-4F90-A49B-540D9F810CC5}" Name="ActionTime" DisplayName="$Resources:ActionTime" Description="$Resources:ActionTime" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{5D18F540-ACCF-46E8-9AED-F85B678C0BE9}" Name="RequestID" DisplayName="$Resources:RequestID" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/MaterialsRequests" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="ID"></Field><Field ID="{38C95A78-5D7D-4D0C-9A61-5A20447A8CFF}" Name="IsMaterialDeleted" DisplayName="$Resources:IsDeleted" Description="$Resources:IsDeleted" Type="Boolean" Required="FALSE" Group="MOD SiteColumns"><Default>FALSE</Default></Field><Field ID="{A1E9635E-5B79-401A-99BB-CB8C22A50C3B}" Name="MaterialNotes" DisplayName="$Resources:Notes" Description="$Resources:Notes" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="TRUE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="MaterialName" /><FieldRef Name="Quantity" /><FieldRef Name="ActionTime" /><FieldRef Name="RequestID" /><FieldRef Name="IsMaterialDeleted" /><FieldRef Name="MaterialNotes" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="63bf28a2-13d1-4767-9e64-7e902e8fdfff" solutionId="63bf28a2-13d1-4767-9e64-7e902e8fdfff" resetWebServer="false" sharePointProductVersion="19.0" name="SupervisorDevicesRequestStatusCT" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d2387fef-00ec-4d97-8b0d-a29de4f6df15" />
+  </features>
+</package>

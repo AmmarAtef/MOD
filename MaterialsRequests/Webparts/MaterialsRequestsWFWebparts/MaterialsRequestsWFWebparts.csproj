@@ -1,0 +1,203 @@
+﻿<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F35090E7-22B6-4839-A93D-1FA559FDA2B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaterialsRequestsWFWebparts</RootNamespace>
+    <AssemblyName>MaterialsRequestsWFWebparts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>19.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <AssemblyDeploymentTarget>WebApplication</AssemblyDeploymentTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMaterialsRequestWP\AddMaterialsRequestWP.cs" />
+    <Compile Include="AddMaterialsRequestWP\AddMaterialsRequestWPUserControl.ascx.cs">
+      <DependentUpon>AddMaterialsRequestWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMaterialsRequestWP\AddMaterialsRequestWPUserControl.ascx.designer.cs">
+      <DependentUpon>AddMaterialsRequestWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMaterialsRequestWP\EditMaterialsRequestWP.cs" />
+    <Compile Include="EditMaterialsRequestWP\EditMaterialsRequestWPUserControl.ascx.cs">
+      <DependentUpon>EditMaterialsRequestWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditMaterialsRequestWP\EditMaterialsRequestWPUserControl.ascx.designer.cs">
+      <DependentUpon>EditMaterialsRequestWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMaterialsRequestsWP\EmployeeMaterialsRequestsWP.cs" />
+    <Compile Include="EmployeeMaterialsRequestsWP\EmployeeMaterialsRequestsWPUserControl.ascx.cs">
+      <DependentUpon>EmployeeMaterialsRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMaterialsRequestsWP\EmployeeMaterialsRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>EmployeeMaterialsRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsRequestDetailsWP\MaterialsRequestDetailsWP.cs" />
+    <Compile Include="MaterialsRequestDetailsWP\MaterialsRequestDetailsWPUserControl.ascx.cs">
+      <DependentUpon>MaterialsRequestDetailsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialsRequestDetailsWP\MaterialsRequestDetailsWPUserControl.ascx.designer.cs">
+      <DependentUpon>MaterialsRequestDetailsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtectionMaterialsReportWP\ProtectionMaterialsReportWP.cs" />
+    <Compile Include="ProtectionMaterialsReportWP\ProtectionMaterialsReportWPUserControl.ascx.cs">
+      <DependentUpon>ProtectionMaterialsReportWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProtectionMaterialsReportWP\ProtectionMaterialsReportWPUserControl.ascx.designer.cs">
+      <DependentUpon>ProtectionMaterialsReportWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProtectionMaterialsRequestsWP\ProtectionMaterialsRequestsWP.cs" />
+    <Compile Include="ProtectionMaterialsRequestsWP\ProtectionMaterialsRequestsWPUserControl.ascx.cs">
+      <DependentUpon>ProtectionMaterialsRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProtectionMaterialsRequestsWP\ProtectionMaterialsRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>ProtectionMaterialsRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityMaterialsRequestsWP\SecurityMaterialsRequestsWP.cs" />
+    <Compile Include="SecurityMaterialsRequestsWP\SecurityMaterialsRequestsWPUserControl.ascx.cs">
+      <DependentUpon>SecurityMaterialsRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurityMaterialsRequestsWP\SecurityMaterialsRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>SecurityMaterialsRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorMaterialsRequestsWP\SupervisorMaterialsRequestsWP.cs" />
+    <Compile Include="SupervisorMaterialsRequestsWP\SupervisorMaterialsRequestsWPUserControl.ascx.cs">
+      <DependentUpon>SupervisorMaterialsRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupervisorMaterialsRequestsWP\SupervisorMaterialsRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>SupervisorMaterialsRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddMaterialsRequestWP\AddMaterialsRequestWP.webpart" />
+    <None Include="AddMaterialsRequestWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4fe23eac-3606-4768-8cb4-44a1341fb944}</SharePointProjectItemId>
+    </None>
+    <None Include="EditMaterialsRequestWP\EditMaterialsRequestWP.webpart" />
+    <None Include="EditMaterialsRequestWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73479095-4208-49b7-97c7-adfa3907f0c0}</SharePointProjectItemId>
+    </None>
+    <None Include="EmployeeMaterialsRequestsWP\EmployeeMaterialsRequestsWP.webpart" />
+    <None Include="EmployeeMaterialsRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{818c6f4a-55cf-4ac8-8c2e-c6b2037705e7}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{cc32faf2-69a4-49cb-94b0-29101dd00609}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MaterialsRequestDetailsWP\MaterialsRequestDetailsWP.webpart" />
+    <None Include="MaterialsRequestDetailsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4f26dc6-39ef-411b-a96a-cf694265b58e}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{9c060d9f-8e15-4e8b-b8a6-95dc38e578dd}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ProtectionMaterialsReportWP\ProtectionMaterialsReportWP.webpart" />
+    <None Include="ProtectionMaterialsReportWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a29ccea8-c66e-4f27-b3b5-b3e87722ab90}</SharePointProjectItemId>
+    </None>
+    <None Include="ProtectionMaterialsRequestsWP\ProtectionMaterialsRequestsWP.webpart" />
+    <None Include="ProtectionMaterialsRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bfda6d80-7cd5-48bc-a5b5-9c6ac616dc89}</SharePointProjectItemId>
+    </None>
+    <None Include="SecurityMaterialsRequestsWP\SecurityMaterialsRequestsWP.webpart" />
+    <None Include="SecurityMaterialsRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{82e62c2f-5361-431f-9978-05ef2e8c4f09}</SharePointProjectItemId>
+    </None>
+    <None Include="SupervisorMaterialsRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{199e2368-f5de-4be1-816a-5672f5f8632b}</SharePointProjectItemId>
+    </None>
+    <None Include="SupervisorMaterialsRequestsWP\SupervisorMaterialsRequestsWP.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddMaterialsRequestWP\AddMaterialsRequestWPUserControl.ascx" />
+    <Content Include="AddMaterialsRequestWP\Elements.xml" />
+    <Content Include="EditMaterialsRequestWP\EditMaterialsRequestWPUserControl.ascx" />
+    <Content Include="EditMaterialsRequestWP\Elements.xml" />
+    <Content Include="EmployeeMaterialsRequestsWP\Elements.xml" />
+    <Content Include="EmployeeMaterialsRequestsWP\EmployeeMaterialsRequestsWPUserControl.ascx" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="MaterialsRequestDetailsWP\Elements.xml" />
+    <Content Include="MaterialsRequestDetailsWP\MaterialsRequestDetailsWPUserControl.ascx" />
+    <Content Include="ProtectionMaterialsReportWP\Elements.xml" />
+    <Content Include="ProtectionMaterialsReportWP\ProtectionMaterialsReportWPUserControl.ascx" />
+    <Content Include="ProtectionMaterialsRequestsWP\Elements.xml" />
+    <Content Include="ProtectionMaterialsRequestsWP\ProtectionMaterialsRequestsWPUserControl.ascx" />
+    <Content Include="SecurityMaterialsRequestsWP\Elements.xml" />
+    <Content Include="SecurityMaterialsRequestsWP\SecurityMaterialsRequestsWPUserControl.ascx" />
+    <Content Include="SupervisorMaterialsRequestsWP\Elements.xml" />
+    <Content Include="SupervisorMaterialsRequestsWP\SupervisorMaterialsRequestsWPUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\WebpartsCommon\WebpartsCommonHelpers\WebpartsCommonHelpers.csproj">
+      <Project>{901bb91a-7078-400f-8e91-e92a7751ae12}</Project>
+      <Name>WebpartsCommonHelpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

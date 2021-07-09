@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+ID="{B720A445-04C3-4586-A447-B941C346EDA5}"
+Name="DeviceCheckInNote"
+DisplayName="$Resources:DeviceCheckInNote"
+Description="$Resources:DeviceCheckInNote"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+  <Field
+ID="{147AB8B0-BF60-4D8F-B459-3F91FE02939B}"
+Name="DeviceCheckOutNote"
+DisplayName="$Resources:DeviceCheckOutNote"
+Description="$Resources:DeviceCheckOutNote"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+
+  <Field
+    ID="{D4CBB0FC-F5B9-4BA7-9FC7-1F4B8ADB1559}"
+    Name="DeviceID"
+  DisplayName="$Resources:DeviceID"
+    Type="Lookup"
+     Required="TRUE"
+      Overwrite="TRUE"
+     Group="MOD SiteColumns"
+      EnforceUniqueValues="FALSE" List="Lists/RequestDevicesApproval"
+      PrependId="TRUE"
+      Hidden="FALSE"
+      ReadOnly="FALSE" ShowField="DeviceType">
+  </Field>
+
+  <Field
+      ID="{4FF23C84-B084-49AD-BC1A-36C0FA69CA64}"
+      Name="DeviceCheckIn"
+      DisplayName="$Resources:DeviceCheckIn"
+      Description="$Resources:DeviceCheckIn"
+      Type="DateTime"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+      ID="{5DD9AF8A-D4BC-4F46-AB13-52C43B34D9A6}"
+      Name="DeviceCheckOut"
+      DisplayName="$Resources:DeviceCheckOut"
+      Description="$Resources:DeviceCheckOut"
+      Type="DateTime"
+      Required="False"
+      Group="MOD SiteColumns">
+  </Field>
+  
+</Elements>

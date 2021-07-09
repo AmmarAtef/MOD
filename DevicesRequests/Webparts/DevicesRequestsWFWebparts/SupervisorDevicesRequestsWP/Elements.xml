@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SupervisorDevicesRequestsWP" List="113" Url="_catalogs/wp">
+    <File Path="SupervisorDevicesRequestsWP\SupervisorDevicesRequestsWP.webpart" Url="DevicesRequestsWFWebparts_SupervisorDevicesRequestsWP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="MOD-Webparts" />
+    </File>
+  </Module>
+</Elements>

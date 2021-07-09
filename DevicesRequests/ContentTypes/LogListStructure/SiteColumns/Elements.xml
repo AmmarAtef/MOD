@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{745057C0-6EE0-4FB1-A286-ABA5A391ACB3}"
+       Name="LogRequestID"
+       DisplayName="$Resources:LogRequestID"
+       Description="$Resources:LogRequestID"
+       Type="Text"
+       Required="TRUE"
+       Group="MOD SiteColumns">
+  </Field>
+  <Field
+      ID="{76022E37-A481-4817-9D4E-7C4B3EBD82CF}"
+      Name="RequestModifiedBy"
+      DisplayName="$Resources:RequestModifiedBy"
+      Description="$Resources:RequestModifiedBy"
+      Type="Text"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+  <Field
+      ID="{14E8647C-2433-48C9-8B04-6F3B1D8B34EA}"
+      Name="RequestStatus"
+      DisplayName="$Resources:RequestStatus"
+      Description="$Resources:RequestStatus"
+      Type="Text"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+ID="{6893B2F2-53FA-49A0-8BE0-53CB8F5ECC0D}"
+Name="RequestNote"
+DisplayName="$Resources:RequestNote"
+Description="$Resources:RequestNote"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="TRUE"
+/>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7fc9b2e5-f375-4f5f-a340-66974e49b243" solutionId="7fc9b2e5-f375-4f5f-a340-66974e49b243" resetWebServer="false" sharePointProductVersion="19.0" name="ActivateCommonStructureFeatures" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="9cd6a3d3-8336-4fa5-b039-f08820aafd4f" />
+  </features>
+</package>

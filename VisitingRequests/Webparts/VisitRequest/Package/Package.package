@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b4583301-f73e-4538-b726-3ada6c0dc00a" solutionId="b4583301-f73e-4538-b726-3ada6c0dc00a" resetWebServer="false" sharePointProductVersion="19.0" name="VisitRequest" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="WebpartsCommonHelpers.dll" deploymentTarget="WebApplication" projectPath="..\..\..\Common\WebpartsCommon\WebpartsCommonHelpers\WebpartsCommonHelpers.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="adad891f-7c04-4d6a-9db0-fccd9719eb36" />
+  </features>
+</package>

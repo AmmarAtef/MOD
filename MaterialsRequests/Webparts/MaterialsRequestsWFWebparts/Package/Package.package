@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9c060d9f-8e15-4e8b-b8a6-95dc38e578dd" solutionId="9c060d9f-8e15-4e8b-b8a6-95dc38e578dd" resetWebServer="false" sharePointProductVersion="19.0" name="MaterialsRequestsWFWebparts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="WebpartsCommonHelpers.dll" deploymentTarget="WebApplication" projectPath="..\..\..\Common\WebpartsCommon\WebpartsCommonHelpers\WebpartsCommonHelpers.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="cc32faf2-69a4-49cb-94b0-29101dd00609" />
+  </features>
+</package>

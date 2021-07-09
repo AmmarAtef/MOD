@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0fe01a2d-4b9e-4be5-8c0d-c790eaf55876" solutionId="0fe01a2d-4b9e-4be5-8c0d-c790eaf55876" resetWebServer="false" sharePointProductVersion="19.0" name="GatesCT" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="786de3a0-1727-47da-9e0b-85629856f2cd" />
+  </features>
+</package>

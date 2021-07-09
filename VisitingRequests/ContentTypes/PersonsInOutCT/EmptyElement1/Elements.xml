@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field
+ID="{9A640349-A7DE-4F73-AF07-8D5C8A818B64}"
+Name="CheckInNotes"
+DisplayName="$Resources:CheckInNotes"
+Description="$Resources:CheckInNotes"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+  <Field
+ID="{DB399548-D1DC-46CF-9E67-C204E3EDBBF1}"
+Name="CheckOutNotes"
+DisplayName="$Resources:CheckOutNotes"
+Description="$Resources:CheckOutNotes"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+
+  <Field
+    ID="{1895D8E3-BE87-4B16-9439-4EBF3F7DDF7F}"
+    Name="ApprovedPerson"
+  DisplayName="$Resources:ApprovedPerson"
+    Type="Lookup"
+     Required="TRUE"
+      Overwrite="TRUE"
+     Group="MOD SiteColumns"
+      EnforceUniqueValues="FALSE" List="Lists/RequestPersonsApproval"
+      PrependId="TRUE"
+      Hidden="FALSE"
+      ReadOnly="FALSE" ShowField="PersonFirstName">
+  </Field>
+
+  <Field
+      ID="{7894AD8F-1C66-44CD-9779-15D2D4776156}"
+      Name="CheckIN"
+      DisplayName="$Resources:CheckIN"
+      Description="$Resources:CheckIN"
+      Type="DateTime"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+      ID="{AC0059B2-3EF2-434A-8602-E35328B2DB2F}"
+      Name="CheckOut"
+      DisplayName="$Resources:CheckOut"
+      Description="$Resources:CheckOut"
+      Type="DateTime"
+      Required="False"
+      Group="MOD SiteColumns">
+  </Field>
+</Elements>

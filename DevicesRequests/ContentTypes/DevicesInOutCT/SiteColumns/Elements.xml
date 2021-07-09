@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+ID="{8207B0E5-5983-4EF6-AF6D-69283EB01F20}"
+Name="CheckInNote"
+DisplayName="$Resources:CheckInNote"
+Description="$Resources:CheckInNote"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+  <Field
+ID="{8CACACF1-39DA-4252-84E3-6F4CE2D3981D}"
+Name="CheckOutNote"
+DisplayName="$Resources:CheckOutNote"
+Description="$Resources:CheckOutNote"
+Group="MOD SiteColumns"
+Type="Note"
+NumLines="10"
+Required="False"
+/>
+
+  <Field
+    ID="{A2886CB4-42AE-4D16-8E04-9B6F3A0F41CF}"
+    Name="DeviceID"
+  DisplayName="$Resources:DeviceID"
+    Type="Lookup"
+     Required="TRUE"
+      Overwrite="TRUE"
+     Group="MOD SiteColumns"
+      EnforceUniqueValues="FALSE" List="Lists/RequestDevicesApproval"
+      PrependId="TRUE"
+      Hidden="FALSE"
+      ReadOnly="FALSE" ShowField="DeviceType">
+  </Field>
+
+  <Field
+      ID="{1C8932EB-58DE-4BDF-84CD-CBC2CEF4C77B}"
+      Name="CheckIn"
+      DisplayName="$Resources:CheckIn"
+      Description="$Resources:CheckIn"
+      Type="DateTime"
+      Required="TRUE"
+      Group="MOD SiteColumns">
+  </Field>
+
+  <Field
+      ID="{0DE23EC8-763D-485C-9BC8-980A1CAEBF90}"
+      Name="DeviceCheckOut"
+      DisplayName="$Resources:CheckOut"
+      Description="$Resources:CheckOut"
+      Type="DateTime"
+      Required="False"
+      Group="MOD SiteColumns">
+  </Field>
+</Elements>

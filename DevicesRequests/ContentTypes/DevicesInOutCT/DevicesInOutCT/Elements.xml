@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100629FF7C47AED4BA09DE59F709B2214A1" Name="DevicesInOutCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{A2886CB4-42AE-4D16-8E04-9B6F3A0F41CF}" DisplayName="$Resources:DeviceID" Required="TRUE" Hidden="FALSE" Name="DeviceID" ReadOnly="FALSE" />
+      <FieldRef ID="{1C8932EB-58DE-4BDF-84CD-CBC2CEF4C77B}" DisplayName="$Resources:CheckIn" Required="TRUE" Description="$Resources:CheckIn" Name="CheckIn" />
+      <FieldRef ID="{0DE23EC8-763D-485C-9BC8-980A1CAEBF90}" DisplayName="$Resources:CheckOut" Required="False" Description="$Resources:CheckOut" Name="DeviceCheckOut" />
+      <FieldRef ID="{8207B0E5-5983-4EF6-AF6D-69283EB01F20}" DisplayName="$Resources:CheckInNote" Required="False" Description="$Resources:CheckInNote" Name="CheckInNote" NumLines="10" />
+      <FieldRef ID="{8CACACF1-39DA-4252-84E3-6F4CE2D3981D}" DisplayName="$Resources:CheckOutNote" Required="False" Description="$Resources:CheckOutNote" Name="CheckOutNote" NumLines="10" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

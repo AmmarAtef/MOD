@@ -1,0 +1,120 @@
+﻿<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B12CA9B-1A06-40C0-958A-5EA641B4F8D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisitingRequestMachineCT</RootNamespace>
+    <AssemblyName>VisitingRequestMachineCT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>19.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+    <AssemblyDeploymentTarget>WebApplication</AssemblyDeploymentTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{ac30bebb-22d5-4292-a2fb-ab7d0c961bc4}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{ff091b31-ae7e-440a-a129-e0eee0cf6aa5}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{0acc8709-10d7-4da7-ab5d-9bab3893c919}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="RequestDevicesApproval\RequestDevicesApprovalInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ed0d68fe-dd69-44d2-85e4-0ee35a2a0b07}</SharePointProjectItemId>
+    </None>
+    <None Include="RequestDevicesApproval\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a80184ab-c2b4-41e8-862a-26a3de08b067}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e86f0204-64d5-41b1-a2be-73401d0ecd2c}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitingRequestMachineCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f30fa74a-d87f-452a-8319-34c9ec49559d}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitingRequestMachine\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{435f4388-8540-4c57-8a65-a1b9e8e2c7f4}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitingRequestMachine\VisitingRequestMachineInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{969bac94-99cd-4f7c-a1c6-459979393cae}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="RequestDevicesApproval\Elements.xml" />
+    <Content Include="RequestDevicesApproval\RequestDevicesApprovalInstance\Elements.xml" />
+    <Content Include="RequestDevicesApproval\Schema.xml" />
+    <Content Include="SiteColumns\Elements.xml" />
+    <Content Include="VisitingRequestMachineCT\Elements.xml" />
+    <Content Include="VisitingRequestMachine\Elements.xml" />
+    <Content Include="VisitingRequestMachine\Schema.xml" />
+    <Content Include="VisitingRequestMachine\VisitingRequestMachineInstance\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature2\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

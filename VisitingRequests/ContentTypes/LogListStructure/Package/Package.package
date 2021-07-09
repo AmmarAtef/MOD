@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a63328e0-5286-40bd-89dc-14b476515374" solutionId="a63328e0-5286-40bd-89dc-14b476515374" resetWebServer="false" sharePointProductVersion="19.0" name="LogListStructure" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="13fb08b4-9bbc-4fe2-b0ab-2225883629c5" />
+  </features>
+</package>

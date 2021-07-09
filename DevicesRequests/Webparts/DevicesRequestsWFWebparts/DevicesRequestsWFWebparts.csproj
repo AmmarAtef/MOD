@@ -1,0 +1,203 @@
+﻿<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2EB4EE4-F02D-4FE0-9D74-6F12BF8782E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevicesRequestsWFWebparts</RootNamespace>
+    <AssemblyName>DevicesRequestsWFWebparts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>19.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <AssemblyDeploymentTarget>WebApplication</AssemblyDeploymentTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDevicesRequestWP\AddDevicesRequestWP.cs" />
+    <Compile Include="AddDevicesRequestWP\AddDevicesRequestWPUserControl.ascx.cs">
+      <DependentUpon>AddDevicesRequestWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDevicesRequestWP\AddDevicesRequestWPUserControl.ascx.designer.cs">
+      <DependentUpon>AddDevicesRequestWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevicesRequestDetailsWP\DevicesRequestDetailsWP.cs" />
+    <Compile Include="DevicesRequestDetailsWP\DevicesRequestDetailsWPUserControl.ascx.cs">
+      <DependentUpon>DevicesRequestDetailsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevicesRequestDetailsWP\DevicesRequestDetailsWPUserControl.ascx.designer.cs">
+      <DependentUpon>DevicesRequestDetailsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDevicesRequestWP\EditDevicesRequestWP.cs" />
+    <Compile Include="EditDevicesRequestWP\EditDevicesRequestWPUserControl.ascx.cs">
+      <DependentUpon>EditDevicesRequestWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDevicesRequestWP\EditDevicesRequestWPUserControl.ascx.designer.cs">
+      <DependentUpon>EditDevicesRequestWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDevicesRequestsWP\EmployeeDevicesRequestsWP.cs" />
+    <Compile Include="EmployeeDevicesRequestsWP\EmployeeDevicesRequestsWPUserControl.ascx.cs">
+      <DependentUpon>EmployeeDevicesRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeDevicesRequestsWP\EmployeeDevicesRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>EmployeeDevicesRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtectionDevicesRequestsReportWP\ProtectionDevicesRequestsReportWP.cs" />
+    <Compile Include="ProtectionDevicesRequestsReportWP\ProtectionDevicesRequestsReportWPUserControl.ascx.cs">
+      <DependentUpon>ProtectionDevicesRequestsReportWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProtectionDevicesRequestsReportWP\ProtectionDevicesRequestsReportWPUserControl.ascx.designer.cs">
+      <DependentUpon>ProtectionDevicesRequestsReportWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProtectionDevicesRequestsWP\ProtectionDevicesRequestsWP.cs" />
+    <Compile Include="ProtectionDevicesRequestsWP\ProtectionDevicesRequestsWPUserControl.ascx.cs">
+      <DependentUpon>ProtectionDevicesRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProtectionDevicesRequestsWP\ProtectionDevicesRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>ProtectionDevicesRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityDevicesRequestsWP\SecurityDevicesRequestsWP.cs" />
+    <Compile Include="SecurityDevicesRequestsWP\SecurityDevicesRequestsWPUserControl.ascx.cs">
+      <DependentUpon>SecurityDevicesRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurityDevicesRequestsWP\SecurityDevicesRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>SecurityDevicesRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorDevicesRequestsWP\SupervisorDevicesRequestsWP.cs" />
+    <Compile Include="SupervisorDevicesRequestsWP\SupervisorDevicesRequestsWPUserControl.ascx.cs">
+      <DependentUpon>SupervisorDevicesRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupervisorDevicesRequestsWP\SupervisorDevicesRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>SupervisorDevicesRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddDevicesRequestWP\AddDevicesRequestWP.webpart" />
+    <None Include="AddDevicesRequestWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d002c0b-250c-4a00-a840-fd45d3e1fd8d}</SharePointProjectItemId>
+    </None>
+    <None Include="DevicesRequestDetailsWP\DevicesRequestDetailsWP.webpart" />
+    <None Include="DevicesRequestDetailsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81cc2b6c-de40-4a99-93d6-bc5e00b9af04}</SharePointProjectItemId>
+    </None>
+    <None Include="EditDevicesRequestWP\EditDevicesRequestWP.webpart" />
+    <None Include="EditDevicesRequestWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2cc4b2ec-9ef4-4b6c-945f-eb4f589e5147}</SharePointProjectItemId>
+    </None>
+    <None Include="EmployeeDevicesRequestsWP\EmployeeDevicesRequestsWP.webpart" />
+    <None Include="EmployeeDevicesRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7de16586-3daa-42a9-9bd5-d4a38979c87a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{6bd7d663-1e96-49e8-8bbd-926a8c9c7140}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{5fc35179-5d29-463a-a4f8-3cc47d211178}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ProtectionDevicesRequestsReportWP\ProtectionDevicesRequestsReportWP.webpart" />
+    <None Include="ProtectionDevicesRequestsReportWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63e6db87-3d36-42b7-aad1-3ac52f407740}</SharePointProjectItemId>
+    </None>
+    <None Include="ProtectionDevicesRequestsWP\ProtectionDevicesRequestsWP.webpart" />
+    <None Include="ProtectionDevicesRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{011e1d42-db57-45a1-91f2-b7a1023d9bd2}</SharePointProjectItemId>
+    </None>
+    <None Include="SecurityDevicesRequestsWP\SecurityDevicesRequestsWP.webpart" />
+    <None Include="SecurityDevicesRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7f99e8e8-802a-40a8-b558-e271c0327f4f}</SharePointProjectItemId>
+    </None>
+    <None Include="SupervisorDevicesRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca2f45b3-3763-4999-a754-c1ff882f3f42}</SharePointProjectItemId>
+    </None>
+    <None Include="SupervisorDevicesRequestsWP\SupervisorDevicesRequestsWP.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddDevicesRequestWP\AddDevicesRequestWPUserControl.ascx" />
+    <Content Include="AddDevicesRequestWP\Elements.xml" />
+    <Content Include="DevicesRequestDetailsWP\DevicesRequestDetailsWPUserControl.ascx" />
+    <Content Include="DevicesRequestDetailsWP\Elements.xml" />
+    <Content Include="EditDevicesRequestWP\EditDevicesRequestWPUserControl.ascx" />
+    <Content Include="EditDevicesRequestWP\Elements.xml" />
+    <Content Include="EmployeeDevicesRequestsWP\Elements.xml" />
+    <Content Include="EmployeeDevicesRequestsWP\EmployeeDevicesRequestsWPUserControl.ascx" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="ProtectionDevicesRequestsReportWP\Elements.xml" />
+    <Content Include="ProtectionDevicesRequestsReportWP\ProtectionDevicesRequestsReportWPUserControl.ascx" />
+    <Content Include="ProtectionDevicesRequestsWP\Elements.xml" />
+    <Content Include="ProtectionDevicesRequestsWP\ProtectionDevicesRequestsWPUserControl.ascx" />
+    <Content Include="SecurityDevicesRequestsWP\Elements.xml" />
+    <Content Include="SecurityDevicesRequestsWP\SecurityDevicesRequestsWPUserControl.ascx" />
+    <Content Include="SupervisorDevicesRequestsWP\Elements.xml" />
+    <Content Include="SupervisorDevicesRequestsWP\SupervisorDevicesRequestsWPUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\WebpartsCommon\WebpartsCommonHelpers\WebpartsCommonHelpers.csproj">
+      <Project>{901bb91a-7078-400f-8e91-e92a7751ae12}</Project>
+      <Name>WebpartsCommonHelpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

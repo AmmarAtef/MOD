@@ -1,0 +1,216 @@
+﻿<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8F2A599-ACFD-4BBB-A276-0A0AD7D37247}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisitRequest</RootNamespace>
+    <AssemblyName>VisitRequest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>19.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmployeeVisitRequestListWP\EmployeeVisitRequestListWP.cs" />
+    <Compile Include="EmployeeVisitRequestListWP\EmployeeVisitRequestListWPUserControl.ascx.cs">
+      <DependentUpon>EmployeeVisitRequestListWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeVisitRequestListWP\EmployeeVisitRequestListWPUserControl.ascx.designer.cs">
+      <DependentUpon>EmployeeVisitRequestListWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsWP\ReportsWP.cs" />
+    <Compile Include="ReportsWP\ReportsWPUserControl.ascx.cs">
+      <DependentUpon>ReportsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportsWP\ReportsWPUserControl.ascx.designer.cs">
+      <DependentUpon>ReportsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityApproveWP\SecurityApproveWP.cs" />
+    <Compile Include="SecurityApproveWP\SecurityApproveWPUserControl.ascx.cs">
+      <DependentUpon>SecurityApproveWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurityApproveWP\SecurityApproveWPUserControl.ascx.designer.cs">
+      <DependentUpon>SecurityApproveWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorApproveWP\SupervisorApproveWP.cs" />
+    <Compile Include="SupervisorApproveWP\SupervisorApproveWPUserControl.ascx.cs">
+      <DependentUpon>SupervisorApproveWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupervisorApproveWP\SupervisorApproveWPUserControl.ascx.designer.cs">
+      <DependentUpon>SupervisorApproveWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitProtectionActionsWP\VisitProtectionActionsWP.cs" />
+    <Compile Include="VisitProtectionActionsWP\VisitProtectionActionsWPUserControl.ascx.cs">
+      <DependentUpon>VisitProtectionActionsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitProtectionActionsWP\VisitProtectionActionsWPUserControl.ascx.designer.cs">
+      <DependentUpon>VisitProtectionActionsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitProtectionDialyReportWP\VisitProtectionDialyReportWP.cs" />
+    <Compile Include="VisitProtectionDialyReportWP\VisitProtectionDialyReportWPUserControl.ascx.cs">
+      <DependentUpon>VisitProtectionDialyReportWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitProtectionDialyReportWP\VisitProtectionDialyReportWPUserControl.ascx.designer.cs">
+      <DependentUpon>VisitProtectionDialyReportWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitRequestDetailsWP\VisitRequestDetailsWP.cs" />
+    <Compile Include="VisitRequestDetailsWP\VisitRequestDetailsWPUserControl.ascx.cs">
+      <DependentUpon>VisitRequestDetailsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitRequestDetailsWP\VisitRequestDetailsWPUserControl.ascx.designer.cs">
+      <DependentUpon>VisitRequestDetailsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitRequestEdit\VisitRequestEdit.cs" />
+    <Compile Include="VisitRequestEdit\VisitRequestEditUserControl.ascx.cs">
+      <DependentUpon>VisitRequestEditUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitRequestEdit\VisitRequestEditUserControl.ascx.designer.cs">
+      <DependentUpon>VisitRequestEditUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitRequestsWP\VisitRequestsWP.cs" />
+    <Compile Include="VisitRequestsWP\VisitRequestsWPUserControl.ascx.cs">
+      <DependentUpon>VisitRequestsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitRequestsWP\VisitRequestsWPUserControl.ascx.designer.cs">
+      <DependentUpon>VisitRequestsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EmployeeVisitRequestListWP\EmployeeVisitRequestListWP.webpart" />
+    <None Include="EmployeeVisitRequestListWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db2532b8-8117-4022-9174-9e0d62e6a508}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{adad891f-7c04-4d6a-9db0-fccd9719eb36}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{b4583301-f73e-4538-b726-3ada6c0dc00a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ReportsWP\ReportsWP.webpart" />
+    <None Include="ReportsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f7043e64-da31-46ba-9c4b-7e49a6f6a07f}</SharePointProjectItemId>
+    </None>
+    <None Include="SecurityApproveWP\SecurityApproveWP.webpart" />
+    <None Include="SecurityApproveWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a38125e-f577-473a-9c39-fc0964f50c6c}</SharePointProjectItemId>
+    </None>
+    <None Include="SupervisorApproveWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{104b2807-8779-4b78-b13a-52deb6bfc1be}</SharePointProjectItemId>
+    </None>
+    <None Include="SupervisorApproveWP\SupervisorApproveWP.webpart" />
+    <None Include="VisitProtectionActionsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7656adcc-b066-4165-9db0-472f61fce819}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitProtectionActionsWP\VisitProtectionActionsWP.webpart" />
+    <None Include="VisitProtectionDialyReportWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{12a6a189-1c48-416a-99e7-022c201cd180}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitProtectionDialyReportWP\VisitProtectionDialyReportWP.webpart" />
+    <None Include="VisitRequestDetailsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a1f1d06-3775-45f9-8f8b-6a1f73200b04}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitRequestDetailsWP\VisitRequestDetailsWP.webpart" />
+    <None Include="VisitRequestEdit\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64e47f10-3148-4f00-b71a-6a2800daa5f4}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitRequestEdit\VisitRequestEdit.webpart" />
+    <None Include="VisitRequestsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d74bed08-46dd-4a59-ac37-7c7fc6e9064d}</SharePointProjectItemId>
+    </None>
+    <None Include="VisitRequestsWP\VisitRequestsWP.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmployeeVisitRequestListWP\Elements.xml" />
+    <Content Include="EmployeeVisitRequestListWP\EmployeeVisitRequestListWPUserControl.ascx" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="ReportsWP\Elements.xml" />
+    <Content Include="ReportsWP\ReportsWPUserControl.ascx" />
+    <Content Include="SecurityApproveWP\Elements.xml" />
+    <Content Include="SecurityApproveWP\SecurityApproveWPUserControl.ascx" />
+    <Content Include="SupervisorApproveWP\Elements.xml" />
+    <Content Include="SupervisorApproveWP\SupervisorApproveWPUserControl.ascx" />
+    <Content Include="VisitProtectionActionsWP\Elements.xml" />
+    <Content Include="VisitProtectionActionsWP\VisitProtectionActionsWPUserControl.ascx" />
+    <Content Include="VisitProtectionDialyReportWP\Elements.xml" />
+    <Content Include="VisitProtectionDialyReportWP\VisitProtectionDialyReportWPUserControl.ascx" />
+    <Content Include="VisitRequestDetailsWP\Elements.xml" />
+    <Content Include="VisitRequestDetailsWP\VisitRequestDetailsWPUserControl.ascx" />
+    <Content Include="VisitRequestEdit\Elements.xml" />
+    <Content Include="VisitRequestEdit\VisitRequestEditUserControl.ascx" />
+    <Content Include="VisitRequestsWP\Elements.xml" />
+    <Content Include="VisitRequestsWP\VisitRequestsWPUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\WebpartsCommon\WebpartsCommonHelpers\WebpartsCommonHelpers.csproj">
+      <Project>{901bb91a-7078-400f-8e91-e92a7751ae12}</Project>
+      <Name>WebpartsCommonHelpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

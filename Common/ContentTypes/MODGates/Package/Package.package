@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e71aab80-2aa5-4a13-b1f0-7e4b451921cf" solutionId="e71aab80-2aa5-4a13-b1f0-7e4b451921cf" resetWebServer="false" sharePointProductVersion="19.0" name="MODGates" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cd86f485-551a-4998-ba88-00a355039328" />
+  </features>
+</package>

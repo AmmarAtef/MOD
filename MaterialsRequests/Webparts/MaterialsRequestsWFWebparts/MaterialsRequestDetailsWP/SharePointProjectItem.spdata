@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="MaterialsRequestDetailsWPUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="MaterialsRequestDetailsWP\" Type="ElementManifest" />
+    <ProjectItemFile Source="MaterialsRequestDetailsWP.webpart" Target="MaterialsRequestDetailsWP\" Type="ElementFile" />
+    <ProjectItemFile Source="MaterialsRequestDetailsWPUserControl.ascx" Target="CONTROLTEMPLATES\MaterialsRequestsWFWebparts\MaterialsRequestDetailsWP\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="MaterialsRequestsWFWebparts.MaterialsRequestDetailsWP" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

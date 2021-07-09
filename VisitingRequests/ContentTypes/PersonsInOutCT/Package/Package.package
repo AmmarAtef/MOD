@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3c2404d6-1644-4fad-b69c-7de2d6788466" solutionId="3c2404d6-1644-4fad-b69c-7de2d6788466" resetWebServer="false" sharePointProductVersion="19.0" name="PersonsInOutCT" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="88b77705-2fa9-4648-9cbb-f9abc9c72683" />
+  </features>
+</package>

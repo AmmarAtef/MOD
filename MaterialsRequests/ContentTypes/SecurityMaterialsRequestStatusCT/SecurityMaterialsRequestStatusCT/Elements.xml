@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100C57B54E8903847B4AA3DB0173787FE61" Name="SecurityMaterialsRequestStatusCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{FB5FD3E2-8705-4A60-BD58-EC4DFF2E1F65}" DisplayName="$Resources:SecurityDepratment" Required="TRUE" Description="$Resources:SecurityDepratment" Name="SecurityDepratment" />
+      <FieldRef ID="{4EA0C4A3-C96C-4BFE-8924-47CE65B89FFA}" DisplayName="$Resources:SecurityRequestID" Required="TRUE" Hidden="FALSE" Name="SecurityRequestID" ReadOnly="FALSE" />
+      <FieldRef ID="{4DDAC619-50BF-4F46-B28C-2AB121B5867D}" DisplayName="$Resources:SecurityStatus" Required="TRUE" Description="$Resources:SecurityStatus" Name="SecurityStatus" />
+      <FieldRef ID="{E1C02FFF-A928-4378-BBCA-CD1C1706F207}" DisplayName="$Resources:SecurityApprovalNote" Required="FALSE" Description="$Resources:SecurityApprovalNote" Name="SecurityApprovalNote" NumLines="10" />
+      <FieldRef ID="{513c9e3f-eb35-4a42-bbfc-ec5295c3acc0}" DisplayName="البوابة" Required="TRUE" Hidden="FALSE" Name="GatesLookup" ReadOnly="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

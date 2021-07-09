@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="VisitingRequest" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/VisitingRequest" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100CA99B014A4D44E14ADC85C3A4C543CE3" Name="VisitingRequestCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{982CFCA5-2CE3-4F26-93AE-FF124E8A7018}" DisplayName="$Resources:RequestMessage" Required="TRUE" Description="$Resources:RequestMessage" Name="RequestMessage" /><FieldRef ID="{2D5EB59E-5325-45AE-88ED-3299768BD361}" DisplayName="$Resources:VistingStartDate" Required="TRUE" Description="$Resources:VistingStartDate" Name="VistingStartDate" /><FieldRef ID="{24C07202-9D9B-4EFB-97E1-78CB304F51D7}" DisplayName="$Resources:VistingEndDate" Required="TRUE" Description="$Resources:VistingEndDate" Name="VistingEndDate" /><FieldRef ID="{A90D87C0-EBD4-4CF9-9CB3-CDC01238E59B}" DisplayName="$Resources:RequestReason" Required="TRUE" Hidden="FALSE" Name="RequestReason" ReadOnly="FALSE" /><FieldRef ID="{1B16FB8E-5815-4F02-9BEC-F8AE8FC349C6}" DisplayName="$Resources:ApplicantName" Required="TRUE" Description="$Resources:ApplicantName" Name="ApplicantName" /><FieldRef ID="{DC3AC598-081D-493F-8810-66FFE254D10A}" DisplayName="$Resources:ApplicantRank" Required="TRUE" Description="$Resources:ApplicantRank" Name="ApplicantRank" /><FieldRef ID="{BAEE17C1-9BA9-4219-AB6C-B16CCEB72755}" DisplayName="$Resources:ApplicantSection" Required="TRUE" Description="$Resources:ApplicantSection" Name="ApplicantSection" /><FieldRef ID="{FC1E705D-7AAA-4D34-844A-1769E3523D8A}" DisplayName="$Resources:ApplicantAdministration" Required="TRUE" Description="$Resources:ApplicantAdministration" Name="ApplicantAdministration" /><FieldRef ID="{F24EEAF0-E4AE-470D-97F3-A90C6091F977}" DisplayName="$Resources:IsDeleted" Required="FALSE" Description="$Resources:IsDeleted" Name="IsDeleted" /><FieldRef ID="{92619673-A705-4780-9C8A-5B4CC83419AA}" DisplayName="$Resources:FinalApproval" Required="FALSE" Description="$Resources:FinalApproval" Name="FinalApproval" /><FieldRef ID="{B7FE08C5-1B43-4955-93F3-5628B32CEAAC}" DisplayName="$Resources:SupervisorMSG" Required="False" Description="$Resources:SupervisorMSG" Name="SupervisorMSG" NumLines="10" /><FieldRef ID="{8832E625-56EA-4688-8E99-2243F48B55F2}" DisplayName="$Resources:SecurityMSG" Required="False" Description="$Resources:SecurityMSG" Name="SecurityMSG" NumLines="10" /><FieldRef ID="{40C856BF-33B1-4BFF-BA30-43B383475787}" DisplayName="$Resources:RequestGate" Required="False" Description="$Resources:RequestGate" Name="RequestGate" /></FieldRefs></ContentType><ContentType ID="0x010098c5fc75f7a74dc08db6901d155b3e2a" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{982CFCA5-2CE3-4F26-93AE-FF124E8A7018}" Name="RequestMessage" /><FieldRef ID="{2D5EB59E-5325-45AE-88ED-3299768BD361}" Name="VistingStartDate" /><FieldRef ID="{24C07202-9D9B-4EFB-97E1-78CB304F51D7}" Name="VistingEndDate" /><FieldRef ID="{A90D87C0-EBD4-4CF9-9CB3-CDC01238E59B}" Name="RequestReason" /><FieldRef ID="{1B16FB8E-5815-4F02-9BEC-F8AE8FC349C6}" Name="ApplicantName" /><FieldRef ID="{DC3AC598-081D-493F-8810-66FFE254D10A}" Name="ApplicantRank" /><FieldRef ID="{BAEE17C1-9BA9-4219-AB6C-B16CCEB72755}" Name="ApplicantSection" /><FieldRef ID="{FC1E705D-7AAA-4D34-844A-1769E3523D8A}" Name="ApplicantAdministration" /><FieldRef ID="{F24EEAF0-E4AE-470D-97F3-A90C6091F977}" Name="IsDeleted" /><FieldRef ID="{92619673-A705-4780-9C8A-5B4CC83419AA}" Name="FinalApproval" /><FieldRef ID="{B7FE08C5-1B43-4955-93F3-5628B32CEAAC}" Name="SupervisorMSG" /><FieldRef ID="{8832E625-56EA-4688-8E99-2243F48B55F2}" Name="SecurityMSG" /><FieldRef ID="{40C856BF-33B1-4BFF-BA30-43B383475787}" Name="RequestGate" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{982CFCA5-2CE3-4F26-93AE-FF124E8A7018}" Name="RequestMessage" DisplayName="$Resources:RequestMessage" Description="$Resources:RequestMessage" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{2D5EB59E-5325-45AE-88ED-3299768BD361}" Name="VistingStartDate" DisplayName="$Resources:VistingStartDate" Description="$Resources:VistingStartDate" Type="DateTime" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{24C07202-9D9B-4EFB-97E1-78CB304F51D7}" Name="VistingEndDate" DisplayName="$Resources:VistingEndDate" Description="$Resources:VistingEndDate" Type="DateTime" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{A90D87C0-EBD4-4CF9-9CB3-CDC01238E59B}" Name="RequestReason" DisplayName="$Resources:RequestReason" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/VisitingReasons" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="Title"></Field><Field ID="{1B16FB8E-5815-4F02-9BEC-F8AE8FC349C6}" Name="ApplicantName" DisplayName="$Resources:ApplicantName" Description="$Resources:ApplicantName" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{DC3AC598-081D-493F-8810-66FFE254D10A}" Name="ApplicantRank" DisplayName="$Resources:ApplicantRank" Description="$Resources:ApplicantRank" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{BAEE17C1-9BA9-4219-AB6C-B16CCEB72755}" Name="ApplicantSection" DisplayName="$Resources:ApplicantSection" Description="$Resources:ApplicantSection" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{FC1E705D-7AAA-4D34-844A-1769E3523D8A}" Name="ApplicantAdministration" DisplayName="$Resources:ApplicantAdministration" Description="$Resources:ApplicantAdministration" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{F24EEAF0-E4AE-470D-97F3-A90C6091F977}" Name="IsDeleted" DisplayName="$Resources:IsDeleted" Description="$Resources:IsDeleted" Type="Boolean" Required="FALSE" Group="MOD SiteColumns"><Default>FALSE</Default></Field><Field ID="{92619673-A705-4780-9C8A-5B4CC83419AA}" Name="FinalApproval" DisplayName="$Resources:FinalApproval" Description="$Resources:FinalApproval" Type="Text" Required="FALSE" Group="MOD SiteColumns"></Field><Field ID="{B7FE08C5-1B43-4955-93F3-5628B32CEAAC}" Name="SupervisorMSG" DisplayName="$Resources:SupervisorMSG" Description="$Resources:SupervisorMSG" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="False" /><Field ID="{8832E625-56EA-4688-8E99-2243F48B55F2}" Name="SecurityMSG" DisplayName="$Resources:SecurityMSG" Description="$Resources:SecurityMSG" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="False" /><Field ID="{40C856BF-33B1-4BFF-BA30-43B383475787}" Name="RequestGate" DisplayName="$Resources:RequestGate" Description="$Resources:RequestGate" Type="Text" Required="False" Group="MOD SiteColumns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="RequestMessage" /><FieldRef Name="VistingStartDate" /><FieldRef Name="VistingEndDate" /><FieldRef Name="RequestReason" /><FieldRef Name="ApplicantName" /><FieldRef Name="ApplicantRank" /><FieldRef Name="ApplicantSection" /><FieldRef Name="ApplicantAdministration" /><FieldRef Name="IsDeleted" /><FieldRef Name="FinalApproval" /><FieldRef Name="SupervisorMSG" /><FieldRef Name="SecurityMSG" /><FieldRef Name="RequestGate" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

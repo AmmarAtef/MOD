@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+ID="{596A5C5B-49CE-4511-9857-0199068B9468}"
+Name="Column1"
+DisplayName="Column1"
+Description="Column1"
+Group="MOD SiteColumns"
+Type="Text"
+Required="False"
+/>
+</Elements>

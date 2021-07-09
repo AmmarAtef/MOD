@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1d59deab-9ad8-46fc-9d93-d0f46d2323c5" solutionId="1d59deab-9ad8-46fc-9d93-d0f46d2323c5" resetWebServer="false" sharePointProductVersion="19.0" name="VisitingRequestCT" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="079e3969-58ba-4055-8c19-0eeaf8062984" />
+    <featureReference itemId="260bf1f5-6baa-49d6-b857-ef6ef66def4c" />
+  </features>
+</package>

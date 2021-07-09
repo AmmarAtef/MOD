@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01006B002D92AF9A4B14B2568E20584F69FA" Name="VisitingRequestPersonsCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{89FA1010-B099-42F9-809A-A0D80EA14B4E}" DisplayName="$Resources:PersonFirstName" Required="TRUE" Description="$Resources:PersonFirstName" Name="PersonFirstName" />
+      <FieldRef ID="{FE9657BD-BDB7-4E53-811C-A2E92CBCFF31}" DisplayName="$Resources:PersonFatherName" Required="TRUE" Description="$Resources:PersonFatherName" Name="PersonFatherName" />
+      <FieldRef ID="{EB48788B-29C9-43C2-AB09-9FD44BEC1D7F}" DisplayName="$Resources:PersonFamilyName" Required="TRUE" Description="$Resources:PersonFamilyName" Name="PersonFamilyName" />
+      <FieldRef ID="{EB050703-345D-4856-83FC-12D2104B0B96}" DisplayName="$Resources:PersonLastName" Required="TRUE" Description="$Resources:PersonLastName" Name="PersonLastName" />
+      <FieldRef ID="{455E50A2-BA62-45B7-854A-26EE3EAC32D3}" DisplayName="$Resources:Nationality" Required="TRUE" Hidden="FALSE" Name="Nationality" ReadOnly="FALSE" />
+      <FieldRef ID="{41FEA7F7-E76E-46DC-874C-95FCA1E73971}" DisplayName="$Resources:IdentityType" Required="TRUE" Hidden="FALSE" Name="IdentityType" ReadOnly="FALSE" />
+      <FieldRef ID="{3C91FA95-C323-461F-9269-E71513C23584}" DisplayName="$Resources:IdentityNumber" Required="TRUE" Description="$Resources:IdentityNumber" Name="IdentityNumber" />
+      <FieldRef ID="{0D8A1B78-1075-46F9-88E4-60554327EC95}" DisplayName="$Resources:WorkingPlace" Required="TRUE" Description="$Resources:WorkingPlace" Name="WorkingPlace" />
+      <FieldRef ID="{159DCFB0-7AA9-4882-B7C9-E577E21CC5CE}" DisplayName="$Resources:VisitingRequestID" Required="TRUE" Hidden="FALSE" Name="VisitingRequestID" ReadOnly="FALSE" />
+      <FieldRef ID="{53A1D65B-172A-4CD7-9C3F-83EF2B112C32}" DisplayName="$Resources:VisitingTime" Required="TRUE" Description="$Resources:VisitingTime" Name="VisitingTime" />
+      <FieldRef ID="{4D56DE43-C2E1-4DD1-AC53-7361C4C00D93}" DisplayName="$Resources:IsVisitPersonDeleted" Required="FALSE" Description="$Resources:IsVisitPersonDeleted" Name="IsVisitPersonDeleted" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

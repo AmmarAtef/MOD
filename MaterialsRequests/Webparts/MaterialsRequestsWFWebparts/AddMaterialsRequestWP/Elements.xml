@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="AddMaterialsRequestWP" List="113" Url="_catalogs/wp">
+    <File Path="AddMaterialsRequestWP\AddMaterialsRequestWP.webpart" Url="MaterialsRequestsWFWebparts_AddMaterialsRequestWP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="MOD-Webparts" />
+    </File>
+  </Module>
+</Elements>

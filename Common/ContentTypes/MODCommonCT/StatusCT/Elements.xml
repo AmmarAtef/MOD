@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01002738599D6B3041118DDCEBB556393310" Name="StatusCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{A23444CA-663C-4631-9D91-652542EF7806}" DisplayName="$Resources:StatusCode" Required="FALSE" Description="$Resources:StatusCode" Name="StatusCode" />
+      <FieldRef ID="{2F24FC0B-F059-4B81-88EE-F6684DA1BA93}" DisplayName="$Resources:StatusType" Required="FALSE" Description="$Resources:StatusType" Name="StatusType" />
+      <FieldRef ID="{F42B3221-5CBC-4270-8B29-E84B5B556972}" DisplayName="$Resources:StatusName" Required="TRUE" Description="$Resources:StatusName" Name="StatusName" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

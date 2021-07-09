@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="PersonsInOut" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PersonsInOut" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100020FD29CC35246BCA6DC599FAE91AE0E" Name="PersonsInOutCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{1895D8E3-BE87-4B16-9439-4EBF3F7DDF7F}" DisplayName="$Resources:ApprovedPerson" Required="TRUE" Hidden="FALSE" Name="ApprovedPerson" ReadOnly="FALSE" /><FieldRef ID="{7894AD8F-1C66-44CD-9779-15D2D4776156}" DisplayName="$Resources:CheckIN" Required="TRUE" Description="$Resources:CheckIN" Name="CheckIN" /><FieldRef ID="{AC0059B2-3EF2-434A-8602-E35328B2DB2F}" DisplayName="$Resources:CheckOut" Required="False" Description="$Resources:CheckOut" Name="CheckOut" /><FieldRef ID="{9A640349-A7DE-4F73-AF07-8D5C8A818B64}" DisplayName="$Resources:CheckInNotes" Required="False" Description="$Resources:CheckInNotes" Name="CheckInNotes" NumLines="10" /><FieldRef ID="{DB399548-D1DC-46CF-9E67-C204E3EDBBF1}" DisplayName="$Resources:CheckOutNotes" Required="False" Description="$Resources:CheckOutNotes" Name="CheckOutNotes" NumLines="10" /></FieldRefs></ContentType><ContentType ID="0x0100c061e56aa23e45a491c3fdcbc8d71dd5" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{1895D8E3-BE87-4B16-9439-4EBF3F7DDF7F}" Name="ApprovedPerson" /><FieldRef ID="{7894AD8F-1C66-44CD-9779-15D2D4776156}" Name="CheckIN" /><FieldRef ID="{AC0059B2-3EF2-434A-8602-E35328B2DB2F}" Name="CheckOut" /><FieldRef ID="{9A640349-A7DE-4F73-AF07-8D5C8A818B64}" Name="CheckInNotes" /><FieldRef ID="{DB399548-D1DC-46CF-9E67-C204E3EDBBF1}" Name="CheckOutNotes" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{1895D8E3-BE87-4B16-9439-4EBF3F7DDF7F}" Name="ApprovedPerson" DisplayName="$Resources:ApprovedPerson" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/RequestPersonsApproval" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="PersonFirstName"></Field><Field ID="{7894AD8F-1C66-44CD-9779-15D2D4776156}" Name="CheckIN" DisplayName="$Resources:CheckIN" Description="$Resources:CheckIN" Type="DateTime" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{AC0059B2-3EF2-434A-8602-E35328B2DB2F}" Name="CheckOut" DisplayName="$Resources:CheckOut" Description="$Resources:CheckOut" Type="DateTime" Required="False" Group="MOD SiteColumns"></Field><Field ID="{9A640349-A7DE-4F73-AF07-8D5C8A818B64}" Name="CheckInNotes" DisplayName="$Resources:CheckInNotes" Description="$Resources:CheckInNotes" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="False" /><Field ID="{DB399548-D1DC-46CF-9E67-C204E3EDBBF1}" Name="CheckOutNotes" DisplayName="$Resources:CheckOutNotes" Description="$Resources:CheckOutNotes" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="False" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="ApprovedPerson" /><FieldRef Name="CheckIN" /><FieldRef Name="CheckOut" /><FieldRef Name="CheckInNotes" /><FieldRef Name="CheckOutNotes" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

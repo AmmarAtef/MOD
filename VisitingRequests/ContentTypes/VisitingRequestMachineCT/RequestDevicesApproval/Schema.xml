@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="RequestDevicesApproval" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/RequestDevicesApproval" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010069DFA9F2AA3040BAAB92D412F54E2521" Name="VisitingRequestMachineCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{E033A48F-11CD-487D-A9A0-0BC6C079F21B}" DisplayName="$Resources:DeviceType" Required="TRUE" Description="$Resources:DeviceType" Name="DeviceType" /><FieldRef ID="{30F06FD5-0018-4392-8019-8AABE3CB2174}" DisplayName="$Resources:DeviceNumber" Required="TRUE" Description="$Resources:DeviceNumber" Name="DeviceNumber" /><FieldRef ID="{331FA2B8-5B6C-495F-8156-BF3A2DE29919}" DisplayName="$Resources:ManufacturingCompanyName" Required="TRUE" Description="$Resources:ManufacturingCompanyName" Name="ManufacturingCompanyName" /><FieldRef ID="{13886187-A55B-4578-B4AF-051E32E1D73D}" DisplayName="$Resources:NotesAboutDevice" Required="TRUE" Description="$Resources:NotesAboutDevice" Name="NotesAboutDevice" NumLines="10" /><FieldRef ID="{A03C6705-AFE1-4F3C-8B6C-3D5C3FECCBDF}" DisplayName="$Resources:PersonVisitingRequestID" Required="TRUE" Hidden="FALSE" Name="PersonVisitingRequestID" ReadOnly="FALSE" /><FieldRef ID="{44ED28C9-F07D-4954-ACF2-56D952403F74}" DisplayName="$Resources:VisitingRequestPersons" Required="TRUE" Hidden="FALSE" Name="VisitingRequestPersons" ReadOnly="FALSE" /><FieldRef ID="{DEE00028-AB4D-4965-8CF2-D59BDBFA6955}" DisplayName="$Resources:IsDeleted" Required="FALSE" Description="$Resources:IsDeleted" Name="IsVisitMachineDeleted" /></FieldRefs></ContentType><ContentType ID="0x0100d95133c25a474cfcabe3e1bf3dc05f0c" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{E033A48F-11CD-487D-A9A0-0BC6C079F21B}" Name="DeviceType" /><FieldRef ID="{30F06FD5-0018-4392-8019-8AABE3CB2174}" Name="DeviceNumber" /><FieldRef ID="{331FA2B8-5B6C-495F-8156-BF3A2DE29919}" Name="ManufacturingCompanyName" /><FieldRef ID="{13886187-A55B-4578-B4AF-051E32E1D73D}" Name="NotesAboutDevice" /><FieldRef ID="{A03C6705-AFE1-4F3C-8B6C-3D5C3FECCBDF}" Name="PersonVisitingRequestID" /><FieldRef ID="{44ED28C9-F07D-4954-ACF2-56D952403F74}" Name="VisitingRequestPersons" /><FieldRef ID="{DEE00028-AB4D-4965-8CF2-D59BDBFA6955}" Name="IsVisitMachineDeleted" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{E033A48F-11CD-487D-A9A0-0BC6C079F21B}" Name="DeviceType" DisplayName="$Resources:DeviceType" Description="$Resources:DeviceType" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{30F06FD5-0018-4392-8019-8AABE3CB2174}" Name="DeviceNumber" DisplayName="$Resources:DeviceNumber" Description="$Resources:DeviceNumber" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{331FA2B8-5B6C-495F-8156-BF3A2DE29919}" Name="ManufacturingCompanyName" DisplayName="$Resources:ManufacturingCompanyName" Description="$Resources:ManufacturingCompanyName" Type="Text" Required="TRUE" Group="MOD SiteColumns"></Field><Field ID="{13886187-A55B-4578-B4AF-051E32E1D73D}" Name="NotesAboutDevice" DisplayName="$Resources:NotesAboutDevice" Description="$Resources:NotesAboutDevice" Group="MOD SiteColumns" Type="Note" NumLines="10" Required="TRUE" /><Field ID="{A03C6705-AFE1-4F3C-8B6C-3D5C3FECCBDF}" Name="PersonVisitingRequestID" DisplayName="$Resources:PersonVisitingRequestID" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/VisitingRequest" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="ID"></Field><Field ID="{44ED28C9-F07D-4954-ACF2-56D952403F74}" Name="VisitingRequestPersons" DisplayName="$Resources:VisitingRequestPersons" Type="Lookup" Required="TRUE" Overwrite="TRUE" Group="MOD SiteColumns" EnforceUniqueValues="FALSE" List="Lists/VisitingRequestPersons" PrependId="TRUE" Hidden="FALSE" ReadOnly="FALSE" ShowField="PersonFirstName"></Field><Field ID="{DEE00028-AB4D-4965-8CF2-D59BDBFA6955}" Name="IsVisitMachineDeleted" DisplayName="$Resources:IsDeleted" Description="$Resources:IsDeleted" Type="Boolean" Required="FALSE" Group="MOD SiteColumns"><Default>FALSE</Default></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="DeviceType" /><FieldRef Name="DeviceNumber" /><FieldRef Name="ManufacturingCompanyName" /><FieldRef Name="NotesAboutDevice" /><FieldRef Name="PersonVisitingRequestID" /><FieldRef Name="VisitingRequestPersons" /><FieldRef Name="IsVisitMachineDeleted" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
